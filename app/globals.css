@@ -3,20 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Anurati";
-  src: url('../public/fonts/Anurati-Regular.otf');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Anurati';
+    src: url('../public/fonts/Anurati-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
 }
 
-
-.testFont {
-  font-family: 'Anurati';
+.mainFont {
+    font-family: 'Anurati';
     font-style: normal;
     font-weight: 400;
-    font-size: 164px;
+    font-size: 124px;
     line-height: 112px;
     letter-spacing: 8.4px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+}
+
+.anuratiFont {
+    font-family: 'Anurati';
+    font-style: normal;
 }
