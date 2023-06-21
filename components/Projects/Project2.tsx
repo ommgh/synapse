@@ -14,7 +14,7 @@ const Project2 = () => {
             >
                 <h1
                 className={`font-bold text-[69px] leading-[112px] tracking-[8px] uppercase ${lexend.className}`}
-                >Project 1</h1>
+                >Project 2</h1>
 
                 <p
                 className='text-xl font-light text-center tracking-[1.2px] w-3/4'
@@ -22,7 +22,7 @@ const Project2 = () => {
 
                 <button
                 className={`bg-white/[.23] tracking-[8.4px] font-semibold text-xl text-center px-[40px] py-[20px] mt-[20px] ${lexend.className}`}
-                >DIVE IN? &gt;</button>
+                >&lt; DIVE IN?</button>
             </div>
         </div>
     )
