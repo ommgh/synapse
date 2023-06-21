@@ -1,5 +1,7 @@
+import Loader from '@/components/Loader'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Suspense } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +20,9 @@ export default function RootLayout({
       <head>
         <link rel='icon' href='https://res.cloudinary.com/db7nrltsv/image/upload/v1687344280/synapse-brain_cibck9.png' />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Suspense fallback={<Loader />}>{children}</Suspense>
+      </body>
     </html>
   )
 }
