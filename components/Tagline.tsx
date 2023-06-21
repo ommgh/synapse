@@ -1,9 +1,4 @@
-import { Lexend_Deca } from 'next/font/google'
-
-const lexend = Lexend_Deca({
-    subsets: ['latin'],
-    weight: '400'
-})
+import { lexend } from "@/lib/fonts"
 
 const Tagline = () => {
     return (
