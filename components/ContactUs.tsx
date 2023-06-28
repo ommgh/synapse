@@ -25,7 +25,7 @@ const ContactUs = () => {
 
                 <p 
                 className={`w-[884.51px] h-[77px] text-center text-white text-[24px] font-medium leading-10 tracking-widest mb-[50px] ${poppins.className}`}
-                >Ready to embark on your next project? Reach out to us today and let's turn your ideas into reality</p>
+                >Ready to embark on your next project? Reach out to us today and let&apos;s turn your ideas into reality</p>
 
                 <button
                 className={`w-[400px] h-[84px] relative bg-black flex justify-center items-center pl-1 pr-[3.94px] mb-[50px] text-center text-white text-[21px] font-semibold uppercase leading-10 tracking-widest ${lexend.className}`}
