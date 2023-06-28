@@ -1,6 +1,7 @@
 "use client";
 
 import About from "@/components/About";
+import ContactUs from "@/components/ContactUs";
 import LandingPage from "@/components/LandingPage";
 import Project from "@/components/Projects/Project";
 import Skills from "@/components/Skills";
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Skills />
       <Team />
+      <ContactUs />
     </main>
   )
 }
