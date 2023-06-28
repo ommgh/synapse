@@ -23,6 +23,7 @@ const Tagline = () => {
 
             <button
             className='absolute bottom-0 mb-[90px] w-[70px] h-[82px] flex items-center justify-center bg-center bg-contain bg-[url(/images/downBtn.png)] bg-no-repeat'
+            aria-label="Down"
             >
                 <div
                 className='w-[23px] h-[12px] bg-center bg-contain bg-[url(/images/down.png)] bg-no-repeat'
