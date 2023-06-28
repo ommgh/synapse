@@ -3,6 +3,7 @@
 import About from "@/components/About";
 import LandingPage from "@/components/LandingPage";
 import Project from "@/components/Projects/Project";
+import Skills from "@/components/Skills";
 import Tagline from "@/components/Tagline";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Tagline />
       <Project />
       <About />
+      <Skills />
     </main>
   )
 }
