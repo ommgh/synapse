@@ -1,14 +1,16 @@
 import { lexend } from "@/lib/fonts"
 
 const Skills = () => {
-    const titleStyle = `z-[1] w-full h-full flex justify-center items-center text-xl tracking-[8px] bg-black/30 ${lexend.className} font-[900]`
+    const titleStyle = `z-[1] w-full h-full flex justify-center items-center bg-black/20 text-[24px] font-extrabold uppercase leading-loose tracking-widest ${lexend.className}`
+
     return (
         <div
-        className="flex flex-col h-screen w-screen justify-center items-center bg-black/[0.9] text-white gap-[25px]"
+        className="flex flex-col h-[110vh] w-screen justify-center items-center bg-black/[0.9] text-white gap-[15px]"
         >
             <h1
-            className={`font-bold text-[49px] leading-[112px] tracking-[8px] uppercase ${lexend.className}`}
-            >SKILLS WE OFFER</h1>  
+            className={`w-[1278px] h-[86px] text-center text-white text-[69px] font-semibold uppercase leading-10 tracking-widest ${lexend.className}`}
+            >Skills we offer</h1>
+            
 
             <div
             className="w-screen h-[470px] grid grid-cols-[1fr_1fr_1fr] justify-center items-center"

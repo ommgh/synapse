@@ -4,7 +4,7 @@ import React from 'react'
 const Team = () => {
     return (
         <div
-        className="flex flex-col h-screen w-screen justify-center items-center bg-black/[0.9] text-white gap-[25px]"
+        className="flex flex-col h-[110vh] w-screen justify-center items-center bg-black/[0.9] text-white gap-[25px]"
         >
             <h3 
             className={`w-[726.67px] h-[86px] text-center text-white text-[69px] font-semibold uppercase leading-10 tracking-widest ${lexend.className}`}
