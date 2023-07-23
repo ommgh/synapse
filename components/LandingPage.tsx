@@ -11,8 +11,8 @@ const LandingPage = () => {
     return (
         <>
             <Hero />
-            <Tagline />
-            <Project />
+            {/* <Tagline /> */}
+            {/* <Project /> */}
             <About />
             <Skills />
             <Team />
