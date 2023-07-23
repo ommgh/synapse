@@ -3,7 +3,7 @@ import { lexend, poppins } from "@/lib/fonts"
 const About = () => {
     return (
         <div
-        className={`flex flex-col min-h-[110vh] py-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
+        className={`flex flex-col min-h-screen py-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
         >
             <p
             className='w-full text-[36px] my-[30px] font-bold tracking-wider'
