@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    ::-webkit-scrollbar{
+    @apply w-4 bg-[#000]
+    }
+    ::-webkit-scrollbar-thumb{
+    @apply rounded-lg bg-[#0d3869] hover:bg-[#1e5a88] /*color trackbar*/
+    }
+    html {
+      -webkit-tap-highlight-color: transparent;
+    }
+}
+
 @font-face {
     font-family: 'Anurati';
     src: url('../public/fonts/Anurati-Regular.otf');
