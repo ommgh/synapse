@@ -6,6 +6,7 @@ import Project from "./Projects/Project"
 import Skills from "./Skills"
 import Tagline from "./Tagline"
 import Team from "./Team"
+import Services from "./Services"
 
 const LandingPage = () => {
     return (
@@ -14,8 +15,9 @@ const LandingPage = () => {
             {/* <Tagline /> */}
             {/* <Project /> */}
             <About />
-            <Skills />
-            <Team />
+            {/* <Skills />
+            <Team /> */}
+            <Services />
             <ContactUs />
         </>
     )
