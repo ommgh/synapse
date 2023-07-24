@@ -6,6 +6,10 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: "blush.design",
             },
+            {
+                protocol: 'https',
+                hostname: "res.cloudinary.com",
+            },
         ],
     },
 }

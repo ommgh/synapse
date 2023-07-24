@@ -1,5 +1,6 @@
 import { poppins } from "@/lib/fonts"
-import { Fade } from "react-awesome-reveal"
+import Image from "next/image"
+import { Fade, Bounce } from "react-awesome-reveal"
 // import { illustrations } from "@/lib/data"
 // import Image from "next/image"
 
@@ -13,12 +14,37 @@ const Hero = () => {
         <div
         className="relative h-screen w-screen flex flex-col justify-center items-center pt-[60px] select-none"
         >
+            {/* <Fade direction="left"
+            className="absolute left-0 w-[350px] h-[350px]"
+            >
+                <Image 
+                src={"https://res.cloudinary.com/db7nrltsv/image/upload/v1690231624/Untitled_design_5_psfews.png"}
+                width={350}
+                height={350}
+                alt="doodle triangle"
+                className="absolute left-[-150px]"
+                />
+            </Fade>
+
+            <Fade direction="right"
+            className="absolute w-[350px] h-[350px] border-2 border-black"
+            >
+                <Image 
+                src={"https://res.cloudinary.com/db7nrltsv/image/upload/v1690233747/Untitled_design_7_k7g3vx.png"}
+                width={350}
+                height={350}
+                alt="doodle triangle"
+                className="absolute right-[-150px] border-2 border-black"
+                />
+            </Fade> */}
+
             <div
             className="flex flex-col justify-center items-center gap-[30px]"
             >
                 <Fade
                 className="anuratiFont w-[1008px] text-center text-[124px] mt-[-30px] mb-[-30px] font-normal uppercase tracking-widest"
-                cascade
+                direction="up"
+                triggerOnce
                 >SYNAPSE</Fade>
 
                 <p
