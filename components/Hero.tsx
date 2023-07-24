@@ -1,4 +1,5 @@
 import { poppins } from "@/lib/fonts"
+import { Fade } from "react-awesome-reveal"
 // import { illustrations } from "@/lib/data"
 // import Image from "next/image"
 
@@ -15,9 +16,10 @@ const Hero = () => {
             <div
             className="flex flex-col justify-center items-center gap-[30px]"
             >
-                <h1
+                <Fade
                 className="anuratiFont w-[1008px] text-center text-[124px] mt-[-30px] mb-[-30px] font-normal uppercase tracking-widest"
-                >SYNAPSE</h1>
+                cascade
+                >SYNAPSE</Fade>
 
                 <p
                 className={`w-[828.27px] text-center text-[22px] font-semibold mb-[30px] ${poppins.className}`}
