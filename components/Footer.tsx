@@ -1,11 +1,15 @@
 import { lexend, poppins } from "@/lib/fonts"
 import Image from "next/image"
 import Link from "next/link"
+import { Fade } from "react-awesome-reveal"
 
 const Footer = () => {
     return (
         <footer>
-            <div
+            <Fade
+            direction="up"
+            triggerOnce
+            delay={1000}
             className="w-full h-fit flex items-center"
             >
                 <Image
@@ -14,7 +18,7 @@ const Footer = () => {
                 height={350}
                 alt="synapse team"
                 />
-            </div>
+            </Fade>
 
             <div
             className={`relative flex justify-between h-auto py-[50px] px-[70px] w-screen bg-black text-white ${poppins.className}`}
