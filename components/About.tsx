@@ -63,6 +63,7 @@ const About = () => {
 
             <Flip
             direction="horizontal"
+            triggerOnce
             >            
                 <div
                 className="w-[1200px] py-9 px-8 mt-[85px] mb-[30px] flex flex-col items-center gap-[25px] rounded-2xl bg-[#000] outline outline-4 outline-black border-4 border-white text-white"
