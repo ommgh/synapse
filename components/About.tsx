@@ -1,5 +1,6 @@
 import { lexend, poppins } from "@/lib/fonts"
 import Project from "./Project"
+import Image from "next/image"
 
 const About = () => {
     return (
@@ -27,8 +28,19 @@ const About = () => {
             </div>
 
             <div
-            className="w-[600px] h-[350px] ml-[700px] mt-[120px] p-5 flex flex-col items-end gap-[15px]"
+            className="relative w-[600px] h-[350px] ml-[700px] mt-[120px] p-5 flex flex-col items-end gap-[15px]"
             >
+                <div
+                className="absolute right-0 mt-[-120px] z-[-1]"
+                >
+                    <Image
+                    src={'https://res.cloudinary.com/db7nrltsv/image/upload/v1690277403/Untitled_design_8_afkpgk.png'}
+                    width={150}
+                    height={150}
+                    alt="abstract design"
+                    />
+                </div>
+
                 <p className={`text-3xl text-right font-semibold leading-10 tracking-wide ${lexend.className}`}>
                     Our Mission
                 </p>
@@ -54,6 +66,12 @@ const About = () => {
                     <br/> <br/>
                     Through our unwavering dedication to exceptional quality, client-centric focus, and an agile approach, we aspire to be the trusted companions on our clients' digital journeys. Together, we will build a future where limitless possibilities await, and where success knows no bounds.
                 </p>
+            </div>
+
+            <div className="my-[70px]">
+                <p
+                className="text-center text-7xl leading-[110px] font-semibold tracking-widest"
+                >Want to see what <br/> innovative minds can create</p>
             </div>
 
             <Project />
