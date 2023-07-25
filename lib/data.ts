@@ -66,20 +66,4 @@ export const projectData = [
         github: '',
         labels: ["Web Development", "UI / UX"]
     },
-    {
-        id: 5,
-        name: "Project 5",
-        website: "https://www.google.com",
-        img: 'https://images.pexels.com/photos/3194519/pexels-photo-3194519.jpeg',
-        github: '',
-        labels: ["Web Development", "UI / UX"]
-    },
-    {
-        id: 6,
-        name: "Project 6",
-        website: "https://www.google.com",
-        img: 'https://images.pexels.com/photos/3194519/pexels-photo-3194519.jpeg',
-        github: '',
-        labels: ["Web Development", "UI / UX"]
-    },
 ]
