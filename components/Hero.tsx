@@ -66,6 +66,7 @@ const Hero = () => {
                 <AttentionSeeker
                 effect="rubberBand"
                 delay={3500}
+                triggerOnce
                 >
                     <button
                     className={`border-[3px] border-black rounded-lg px-7 py-4 mt-[0px] text-2xl text-white bg-[#000] ${poppins.className} hover:bg-[#fff] hover:text-[#000] hover:font-bold font-bold tracking-wide`}

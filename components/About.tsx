@@ -16,6 +16,7 @@ const About = () => {
             <Fade
             direction="left"
             triggerOnce
+            delay={1000}
             className="relative w-[1047px] h-[525px] mt-[30px] bg-[url(https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg)] bg-center bg-no-repeat bg-cover"
             >
                 <div
@@ -64,6 +65,7 @@ const About = () => {
             <Flip
             direction="horizontal"
             triggerOnce
+            delay={2000}
             >            
                 <div
                 className="w-[1200px] py-9 px-8 mt-[85px] mb-[30px] flex flex-col items-center gap-[25px] rounded-2xl bg-[#000] outline outline-4 outline-black border-4 border-white text-white"
