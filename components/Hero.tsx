@@ -1,6 +1,6 @@
 import { poppins } from "@/lib/fonts"
 import Image from "next/image"
-import { Fade, Bounce } from "react-awesome-reveal"
+import { Fade, AttentionSeeker } from "react-awesome-reveal"
 // import { illustrations } from "@/lib/data"
 // import Image from "next/image"
 
@@ -63,11 +63,16 @@ const Hero = () => {
                 className={`w-[828.27px] text-center text-[22px] font-semibold mb-[30px] ${poppins.className}`}
                 >Transforming Visions into Reality, One Project at a Time</p>
 
-                <button
-                className={`border-[3px] border-black rounded-lg px-7 py-4 mt-[0px] text-2xl text-white bg-[#000] ${poppins.className} hover:bg-[#fff] hover:text-[#000] hover:font-bold font-bold tracking-wide`}
+                <AttentionSeeker
+                effect="rubberBand"
+                delay={3500}
                 >
-                    Start Building
-                </button>
+                    <button
+                    className={`border-[3px] border-black rounded-lg px-7 py-4 mt-[0px] text-2xl text-white bg-[#000] ${poppins.className} hover:bg-[#fff] hover:text-[#000] hover:font-bold font-bold tracking-wide`}
+                    >
+                        Start Building
+                    </button>
+                </AttentionSeeker>
             </Fade>
         </div>
     )
