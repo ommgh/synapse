@@ -1,6 +1,7 @@
 import { poppins } from "@/lib/fonts"
 import { useState } from "react";
 import Project from "./Project";
+import { Zoom, Bounce } from "react-awesome-reveal";
 
 const Services = () => {
     const [showWeb, setShowWeb] = useState(false);
@@ -17,11 +18,16 @@ const Services = () => {
         <div
         className={`flex flex-col min-h-screen py-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
         >
-            <p
+            <Zoom
+            triggerOnce
+            duration={500}
+            delay={500}
+            ><p
             className="text-center text-7xl leading-[110px] font-semibold tracking-widest my-[50px]"
-            >We provide all the services <br/> you need right in your <br/> product</p>
+            >We provide all the services <br/> you need right in your <br/> product</p></Zoom>
 
             <div className='relative w-full min-h-[1350px] p-[60px]'>
+                
                 <div
                 className="absolute left-[300px] w-[300px] h-[375px] border-4 border-black rounded-xl -rotate-[9deg] p-[10px] flex justify-center items-center font-extrabold text-[56px] text-center tracking-widest transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer"
                 onMouseEnter={() => {
@@ -35,7 +41,7 @@ const Services = () => {
                 className="w-full h-[325px] flex justify-end mt-[30px] mb-[75px]"
                 >
                     {showWeb && <div
-                    className="w-[650px] flex flex-col justify-center items-center"
+                    className="w-[650px] flex flex-col justify-center items-center transition-opacity ease-in"
                     >
                         <p
                         className="text-center text-3xl font-semibold tracking-wide mb-[15px]"
@@ -63,7 +69,7 @@ const Services = () => {
                 className="w-full h-[325px] flex justify-start mt-[30px] mb-[75px]"
                 >
                     {showUIUX && <div
-                    className="w-[650px] flex flex-col justify-center items-center"
+                    className="w-[650px] flex flex-col justify-center items-center transition-opacity ease-in"
                     >
                         <p
                         className="text-center text-3xl font-semibold tracking-wide mb-[15px]"
@@ -91,7 +97,7 @@ const Services = () => {
                 className="w-full h-[325px] flex justify-end mt-[30px] mb-[75px]"
                 >
                     {showApp && <div
-                    className="w-[650px] flex flex-col justify-center items-center"
+                    className="w-[650px] flex flex-col justify-center items-center transition-opacity ease-in"
                     >
                         <p
                         className="text-center text-3xl font-semibold tracking-wide mb-[15px]"
@@ -107,11 +113,11 @@ const Services = () => {
                 </div>
             </div>
             
-            <div className="mb-[70px] mt-[100px]">
+            <Bounce className="mb-[70px] mt-[100px]" triggerOnce>
                 <p
                 className="text-center text-7xl leading-[110px] font-semibold tracking-widest"
                 >Want to see what <br/> innovative minds can create</p>
-            </div>
+            </Bounce>
 
             <Project />
         </div>
