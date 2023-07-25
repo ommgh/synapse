@@ -12,10 +12,10 @@ const FAQ = () => {
     const [index, setIndex] = useState<number>(-1)
     return (
         <div
-        className="w-full border-2 border-black"
+        className="w-full p-[70px]"
         >
             <p
-            className="text-center text-5xl leading-[110px] font-semibold tracking-wide my-[50px]"
+            className="text-center text-5xl leading-[110px] font-semibold tracking-wide mb-[50px]"
             >Have some queries, we got you!</p>
 
             {faqs.map(({query, answer}: Queries, id: number) => (

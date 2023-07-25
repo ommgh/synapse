@@ -1,5 +1,6 @@
 import { poppins } from "@/lib/fonts"
 import { useState } from "react";
+import Project from "./Project";
 
 const Services = () => {
     const [showWeb, setShowWeb] = useState(false);
@@ -105,6 +106,14 @@ const Services = () => {
                     </div>}
                 </div>
             </div>
+            
+            <div className="mb-[70px] mt-[100px]">
+                <p
+                className="text-center text-7xl leading-[110px] font-semibold tracking-widest"
+                >Want to see what <br/> innovative minds can create</p>
+            </div>
+
+            <Project />
         </div>
     )
 }
