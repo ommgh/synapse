@@ -1,5 +1,4 @@
 import { lexend, poppins } from "@/lib/fonts"
-import Project from "./Project"
 import Image from "next/image"
 
 const About = () => {
@@ -67,14 +66,6 @@ const About = () => {
                     Through our unwavering dedication to exceptional quality, client-centric focus, and an agile approach, we aspire to be the trusted companions on our clients' digital journeys. Together, we will build a future where limitless possibilities await, and where success knows no bounds.
                 </p>
             </div>
-
-            <div className="mb-[70px] mt-[100px]">
-                <p
-                className="text-center text-7xl leading-[110px] font-semibold tracking-widest"
-                >Want to see what <br/> innovative minds can create</p>
-            </div>
-
-            <Project />
         </div>
     )
 }
