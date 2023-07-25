@@ -3,6 +3,7 @@ import Hero from "./Hero"
 import About from "./About"
 import Services from "./Services"
 import Footer from "./Footer"
+import FAQ from "./FAQ"
 
 const LandingPage = () => {
     return (
@@ -10,6 +11,7 @@ const LandingPage = () => {
             <Hero />
             <About />
             <Services />
+            <FAQ />
             <Footer />
         </>
     )
