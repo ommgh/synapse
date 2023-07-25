@@ -1,5 +1,6 @@
 import { projectData } from "@/lib/data";
 import { poppins } from "@/lib/fonts";
+import Image from "next/image";
 import Link from "next/link";
 
 interface Project {
@@ -27,7 +28,14 @@ const Project = () => {
                     <div className="flex flex-col items-center" key={id}>
                         <div
                         className="w-[350px] h-[400px] border-2 border-black"
-                        ></div>
+                        >
+                            <Image
+                            src={project.img}
+                            width={350}
+                            height={400}
+                            alt="project banner"
+                            />
+                        </div>
 
                         <Link
                         className="text-2xl font-semibold tracking-wider my-[20px]"
