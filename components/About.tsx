@@ -68,7 +68,7 @@ const About = () => {
                 </p>
             </div>
 
-            <div className="my-[70px]">
+            <div className="mb-[70px] mt-[100px]">
                 <p
                 className="text-center text-7xl leading-[110px] font-semibold tracking-widest"
                 >Want to see what <br/> innovative minds can create</p>
