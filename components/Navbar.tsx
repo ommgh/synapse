@@ -4,7 +4,7 @@ import Link from "next/link"
 const Navbar = () => {
     return (
         <div
-        className="fixed top-0 left-0 h-[60px] w-screen flex z-[10] bg-[#fff] py-4 px-[25px] shadow-lg"
+        className="fixed top-0 left-0 h-[60px] w-screen flex z-[10] bg-[#fff] py-4 px-[25px] shadow-md"
         >
             <Link href={'/'} className="anuratiFont text-xl">SYNAPSE</Link>
 
