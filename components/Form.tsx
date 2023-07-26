@@ -1,7 +1,9 @@
 import { poppins } from "@/lib/fonts";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const Form = () => {
+    const router = useRouter()
     const files: string[] = [];
     const [uploaded, setUploaded] = useState<boolean>(false)
     const uploadFiles = (filelist: FileList) => {
@@ -13,11 +15,13 @@ const Form = () => {
     }
 
     return (
-        <form 
-        action="https://getform.io/f/5930f9a6-41c9-4df1-9238-07d0b587be57" 
-        method="POST" 
+        <form
         encType="multipart/form-data"
         className={`flex flex-col justify-center items-center max-w-[700px] m-auto border-dashed border-2 border-black p-[30px] rounded-[32px] ${poppins.className}`}
+        onSubmit={(e: any) => {
+            e.preventDefault()
+            console.log(e.target)
+        }}
         >
             <label 
             htmlFor="name"
