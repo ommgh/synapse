@@ -12,7 +12,7 @@ const LandingPage = () => {
             <About />
             {/* <Services /> */}
             {/* <Project /> */}
-            <FAQ />
+            {/* <FAQ /> */}
             <Footer />
         </>
     )
