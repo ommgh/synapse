@@ -1,6 +1,5 @@
 import { lexend, poppins } from '@/lib/fonts'
-import Image from 'next/image'
-import { Fade, Flip, Slide } from 'react-awesome-reveal'
+import { Fade, Slide } from 'react-awesome-reveal'
 
 const About = () => {
     return (
