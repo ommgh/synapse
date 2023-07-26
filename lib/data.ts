@@ -90,11 +90,6 @@ export const faqs = [
         answer: "Our development process is collaborative and transparent. We start by understanding your goals and requirements, then proceed to design, development, testing, and deployment stages. Regular updates and feedback sessions keep you informed and involved in every step of the way."
     },
     {
-        id: 5,
-        query: "Can you provide examples of projects similar to ours that you've successfully delivered?",
-        answer: "Certainly! We have an extensive portfolio featuring successful projects from various industries. We'd be happy to share relevant case studies and showcase how our solutions have achieved significant results for our clients."
-    },
-    {
         id: 6,
         query: "How can we get started with your services?",
         answer: "Getting started is easy! Simply reach out to us through our contact form, email, or phone. Our team will promptly respond to your inquiry, discuss your requirements, and guide you through the next steps to kickstart your project."

@@ -21,7 +21,7 @@ const Project = () => {
     const [index, setIndex] = useState<number>(-1);
     return (
         <div
-        className={`flex flex-col min-h-screen py-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
+        className={`flex flex-col min-h-screen pt-[50px] pb-[10px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
         id="projects"
         >
             <Bounce className="my-[40px]" triggerOnce>
@@ -62,6 +62,7 @@ const Project = () => {
                     className="text-5xl text-center font-semibold tracking-wider mb-[50px]"
                     >Our Work</p>
                 </Fade>
+
                 <div
                 className="grid grid-flow-row lg:grid-cols-2 md:grid-cols-1 justify-center items-center mt-[70px] gap-[200px]"
                 >
