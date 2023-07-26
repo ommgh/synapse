@@ -14,12 +14,12 @@ interface FormInput {
 const Form = () => {
     const router = useRouter()
     const [userId, setUserId] = useState<string>("")
+    const [showModel, setShowModel] = useState<boolean>(false);
     const [formData, setFormData] = useState<FormInput>({
         name: "",
         email: "",
         message: "",
     })
-    const [showModel, setShowModel] = useState<boolean>(false);
 
     const handleChange = (e: any) => {
         const { name, value } = e.target
@@ -28,14 +28,13 @@ const Form = () => {
             [name]: value,
         }))
         if(name == 'email') setUserId(formData.email.substring(0, formData.email.indexOf('@') + 1))
-        console.log(userId)
     }
 
     const handleSubmit = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        // KnockAPI.setIdentify(userId, formData)
-        // KnockClient.getAuth(userId);
-        // KnockAPI.triggerWorkflow(userId, "admin@10012023", formData);
+        KnockAPI.setIdentify(userId, formData)
+        KnockClient.getAuth(userId);
+        KnockAPI.triggerWorkflow(userId, "admin@10012023", formData);
         setTimeout(() => setShowModel(true), 500)
         setTimeout(() => {
             setShowModel(false)
