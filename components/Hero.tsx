@@ -48,14 +48,14 @@ const Hero = () => {
             direction="up"
             triggerOnce
             delay={1500}
-            className="flex flex-col justify-center items-center gap-[30px]"
+            className="flex flex-col justify-center items-center gap-[30px] "
             >
                 <div
-                className="anuratiFont w-[1008px] text-center text-[124px] mt-[70px] mb-[-30px] font-normal uppercase tracking-widest"
+                className="anuratiFont w-[1008px] text-center text-[124px] mt-[50px] mb-[-30px] font-normal uppercase tracking-widest"
                 >SYNAPSE</div>
 
                 <p
-                className={`w-[828.27px] text-center text-[22px] font-semibold mb-[50px] ${poppins.className}`}
+                className={`w-[828.27px] text-center text-[22px] font-semibold mb-[120px] ${poppins.className}`}
                 >Transforming Visions into Reality, One Project at a Time</p>
 
                 <AttentionSeeker
@@ -65,7 +65,7 @@ const Hero = () => {
                 >
                     <Link
                     href={'/start-building'}
-                    className={`border-[3px] border-black rounded-lg px-7 py-4 mt-[50px] text-2xl text-white bg-[#000] ${poppins.className} hover:bg-[#fff] hover:text-[#000] hover:font-bold font-bold tracking-wide`}
+                    className={`border-[3px] border-black rounded-lg px-7 py-4 text-2xl text-white bg-[#000] ${poppins.className} hover:bg-[#fff] hover:text-[#000] hover:font-bold font-bold tracking-wide`}
                     >
                         Start Building
                     </Link>

@@ -16,7 +16,7 @@ const Services = () => {
     
     return (
         <div
-        className={`flex flex-col min-h-screen py-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
+        className={`flex flex-col min-h-screen pt-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
         id="services"
         >
             <Zoom

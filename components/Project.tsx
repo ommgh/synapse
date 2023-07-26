@@ -24,7 +24,7 @@ const Project = () => {
         className={`flex flex-col min-h-screen py-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
         id="projects"
         >
-            <Bounce className="mb-[70px] mt-[100px]" triggerOnce>
+            <Bounce className="my-[40px]" triggerOnce>
                 <p
                 className="text-center text-6xl leading-[90px] font-semibold tracking-wider"
                 >Want to see what <br/> innovative minds can create</p>
