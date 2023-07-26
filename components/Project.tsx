@@ -33,10 +33,10 @@ const Project = () => {
             <div
             className={`relative w-fit px-[90px] my-[80px] flex flex-col justify-center items-center ${poppins.className}`}
             >
-                <Fade delay={500} triggerOnce>
-                    <div
-                    className="mb-[-80px] z-[1] flex justify-center items-center gap-[300px]"
-                    >
+                <div
+                className="mb-[-80px] z-[1] flex justify-center items-center gap-[300px]"
+                >
+                    <Fade direction="left">
                         <Image
                         src={'https://res.cloudinary.com/db7nrltsv/image/upload/v1690277394/Untitled_design_9_luljje.png'}
                         width={100}
@@ -44,7 +44,10 @@ const Project = () => {
                         alt="abstract design"
                         className="-rotate-90"
                         />
+                    </Fade>
 
+
+                    <Fade direction="right">
                         <Image
                         src={'https://res.cloudinary.com/db7nrltsv/image/upload/v1690277394/Untitled_design_9_luljje.png'}
                         width={100}
@@ -52,8 +55,8 @@ const Project = () => {
                         alt="abstract design"
                         className="rotate-90"
                         />
-                    </div>
-                </Fade>
+                    </Fade>
+                </div>
 
                 <Fade
                 delay={500} triggerOnce

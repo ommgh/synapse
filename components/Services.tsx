@@ -77,7 +77,7 @@ const Services = () => {
                 </div>
                 
                 <div
-                className="absolute left-[300px] w-[300px] h-[375px] drop-shadow-xl rounded-xl -rotate-[9deg] transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-pink-300"
+                className="absolute left-[300px] w-[300px] h-[375px] drop-shadow-xl rounded-xl -rotate-[9deg] transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-[#39bcdc]"
                 onMouseEnter={() => {
                     hideAll();
                     setShowWeb(true)
@@ -213,7 +213,7 @@ const Services = () => {
                 </div>
 
                 <div
-                className="w-full h-[325px] flex justify-end mt-[150px] mb-[75px]"
+                className="w-full h-[325px] flex justify-end mt-[200px] mb-[75px]"
                 >
                     {showApp && <Fade duration={600}>
                     <div
