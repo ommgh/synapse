@@ -51,10 +51,10 @@ const FAQ = () => {
                 Have some queries, we got you!
             </p>
 
-            {faqs.map(({ query, answer }: Queries, id: number) => (
+            {faqs.map(({ id, query, answer }: Queries, index: number) => (
                 <div
                     className="border-b-[1px] border-black p-4 m-4 hover:cursor-pointer"
-                    key={id}
+                    key={index}
                 >
                     <p
                         className="text-2xl"
@@ -62,6 +62,7 @@ const FAQ = () => {
                             setIndex(id)
                             setShowAns((prev: boolean) => !prev)
                         }}
+                        key={id}
                     >
                         {showAns && index == id ? '-' : '+'} {query}
                     </p>
