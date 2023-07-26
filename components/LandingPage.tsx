@@ -8,11 +8,11 @@ import Project from './Project'
 const LandingPage = () => {
     return (
         <>
-            {/* <Hero /> */}
+            <Hero />
             <About />
             <Services />
-            <Project />
-            <FAQ />
+            {/* <Project /> */}
+            {/* <FAQ /> */}
             <Footer />
         </>
     )
