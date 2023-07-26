@@ -4,15 +4,15 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: "blush.design",
+                hostname: 'blush.design',
             },
             {
                 protocol: 'https',
-                hostname: "res.cloudinary.com",
+                hostname: 'res.cloudinary.com',
             },
             {
                 protocol: 'https',
-                hostname: "images.pexels.com",
+                hostname: 'images.pexels.com',
             },
         ],
     },

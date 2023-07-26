@@ -1,13 +1,13 @@
-"use client";
+'use client'
 
-import LandingPage from "@/components/LandingPage";
-import Navbar from "@/components/Navbar";
+import LandingPage from '@/components/LandingPage'
+import Navbar from '@/components/Navbar'
 
 export default function Home() {
-  return (
-    <main className="min-h-screen overflow-x-hidden">
-      <Navbar />
-      <LandingPage />
-    </main>
-  )
+    return (
+        <main className="min-h-screen overflow-x-hidden scroll-smooth">
+            <Navbar />
+            <LandingPage />
+        </main>
+    )
 }
