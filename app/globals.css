@@ -26,37 +26,19 @@
     font-style: normal;
 }
 
-.loader {
+.glass-card {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2)
+    );
+    backdrop-filter: blur(1rem);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.bar {
-    display: inline-block;
-    width: 3px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, .5);
-    border-radius: 10px;
-    animation: scale-up4 1s linear infinite;
-}
-
-.bar:nth-child(2) {
-    height: 35px;
-    margin: 0 5px;
-    animation-delay: .25s;
-}
-
-.bar:nth-child(3) {
-    animation-delay: .5s;
-}
-
-@keyframes scale-up4 {
-    20% {
-        background-color: #ffff;
-        transform: scaleY(1.5);
-    }
-
-    40% {
-        transform: scaleY(1);
-    }
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }

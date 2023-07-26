@@ -23,19 +23,21 @@ const Services = () => {
             duration={500}
             delay={500}
             ><p
-            className="text-center text-7xl leading-[110px] font-semibold tracking-widest my-[50px]"
+            className="text-center text-6xl leading-[90px] font-semibold tracking-wider my-[50px]"
             >We provide all the services <br/> you need right in your <br/> product</p></Zoom>
 
             <div className='relative w-full min-h-[1350px] p-[60px]'>
                 
                 <div
-                className="absolute left-[300px] w-[300px] h-[375px] border-4 border-black rounded-xl -rotate-[9deg] p-[10px] flex justify-center items-center font-extrabold text-[56px] text-center tracking-widest transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer"
+                className="absolute left-[300px] w-[300px] h-[375px] drop-shadow-xl rounded-xl -rotate-[9deg] flex justify-center items-center font-extrabold text-[56px] text-center tracking-widest transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-pink-300"
                 onMouseEnter={() => {
                     hideAll();
                     setShowWeb(true)
                 }}
                 onMouseLeave={() => hideAll()}
-                >WEB APP</div>
+                >
+                    <div className="glass-card">Web dev</div>
+                </div>
 
                 <div
                 className="w-full h-[325px] flex justify-end mt-[30px] mb-[75px]"
@@ -57,13 +59,15 @@ const Services = () => {
                 </div>
 
                 <div
-                className="absolute left-[900px] top-[450px] w-[300px] h-[375px] border-4 border-black rounded-xl rotate-[9deg] p-[10px] flex justify-center items-center font-extrabold text-[56px] text-center tracking-widest transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer"
+                className="absolute left-[900px] top-[450px] w-[300px] h-[375px] border-4 border-black rounded-xl rotate-[9deg] p-[10px] flex justify-center items-center font-extrabold text-[56px] text-center tracking-widest transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer bg-black"
                 onMouseEnter={() => {
                     hideAll();
                     setShowUIUX(true)
                 }}
                 onMouseLeave={() => hideAll()}
-                >UI / UX</div>
+                >
+                    <div className="glass-card">UI / UX</div>
+                </div>
 
                 <div
                 className="w-full h-[325px] flex justify-start mt-[30px] mb-[75px]"
@@ -85,13 +89,15 @@ const Services = () => {
                 </div>
 
                 <div
-                className="absolute left-[300px] top-[850px] w-[300px] h-[375px] border-4 border-black rounded-xl -rotate-[9deg] p-[10px] flex justify-center items-center font-extrabold text-[56px] text-center tracking-widest transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer"
+                className="absolute left-[300px] top-[850px] w-[300px] h-[375px] border-4 border-black rounded-xl -rotate-[9deg] p-[10px] flex justify-center items-center font-extrabold text-[56px] text-center tracking-widest transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer bg-black"
                 onMouseEnter={() => {
                     hideAll();
                     setShowApp(true)
                 }}
                 onMouseLeave={() => hideAll()}
-                >APP DEV</div>
+                >
+                    <div className="glass-card">App dev</div>
+                </div>
 
                 <div
                 className="w-full h-[325px] flex justify-end mt-[30px] mb-[75px]"
