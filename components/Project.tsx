@@ -67,34 +67,34 @@ const Project = () => {
 
                 <div className="grid grid-flow-row lg:grid-cols-2 md:grid-cols-1 justify-center items-center mt-[70px] gap-[200px]">
                     {projectData.map((project: Project, id: number) => (
-                            <Fade direction="up" triggerOnce cascade key={id}>
+                        <Fade direction="up" triggerOnce cascade key={id}>
+                            <div
+                                className="flex flex-col items-center"
+                            >
                                 <div
-                                    className="flex flex-col items-center"
+                                    className="w-[350px] h-[400px] flex justify-center items-center overflow-hidden hover:cursor-pointer"
+                                    onClick={() => {
+                                        setBoxData(project)
+                                        setIndex(id)
+                                        setShowBox(true)
+                                    }}
                                 >
-                                    <div
-                                        className="w-[350px] h-[400px] flex justify-center items-center overflow-hidden hover:cursor-pointer"
-                                        onClick={() => {
-                                            setBoxData(project)
-                                            setIndex(id)
-                                            setShowBox(true)
-                                        }}
-                                    >
-                                        <Image
-                                            src={project.img}
-                                            width={350}
-                                            height={400}
-                                            alt="project banner"
-                                        />
-                                    </div>
-
-                                    <Link
-                                        className="text-2xl font-semibold tracking-wider my-[20px]"
-                                        href={project.website}
-                                    >
-                                        {project.name}
-                                    </Link>
+                                    <Image
+                                        src={project.img}
+                                        width={350}
+                                        height={400}
+                                        alt="project banner"
+                                    />
                                 </div>
-                            </Fade>
+
+                                <Link
+                                    className="text-2xl font-semibold tracking-wider my-[20px]"
+                                    href={project.website}
+                                >
+                                    {project.name}
+                                </Link>
+                            </div>
+                        </Fade>
                     ))}
                     {/* {showBox && (
                         <ProjectBox
