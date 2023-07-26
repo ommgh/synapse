@@ -9,10 +9,6 @@ const LandingPage = () => {
     return (
         <>
             <Hero />
-            <About />
-            {/* <Services /> */}
-            {/* <Project /> */}
-            {/* <FAQ /> */}
             <Footer />
         </>
     )
