@@ -1,9 +1,9 @@
-import { poppins } from "@/lib/fonts"
 import Hero from "./Hero"
 import About from "./About"
 import Services from "./Services"
 import Footer from "./Footer"
 import FAQ from "./FAQ"
+import Project from "./Project"
 
 const LandingPage = () => {
     return (
@@ -11,6 +11,7 @@ const LandingPage = () => {
             <Hero />
             <About />
             <Services />
+            <Project />
             <FAQ />
             <Footer />
         </>

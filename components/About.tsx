@@ -6,6 +6,7 @@ const About = () => {
     return (
         <div
         className={`flex flex-col min-h-screen py-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
+        id="about-us"
         >
             <Slide
             direction="left"

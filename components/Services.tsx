@@ -1,7 +1,6 @@
 import { poppins } from "@/lib/fonts"
 import { useState } from "react";
-import Project from "./Project";
-import { Zoom, Bounce } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const Services = () => {
     const [showWeb, setShowWeb] = useState(false);
@@ -17,6 +16,7 @@ const Services = () => {
     return (
         <div
         className={`flex flex-col min-h-screen py-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
+        id="services"
         >
             <Zoom
             triggerOnce
@@ -112,14 +112,6 @@ const Services = () => {
                     </div>}
                 </div>
             </div>
-            
-            <Bounce className="mb-[70px] mt-[100px]" triggerOnce>
-                <p
-                className="text-center text-7xl leading-[110px] font-semibold tracking-widest"
-                >Want to see what <br/> innovative minds can create</p>
-            </Bounce>
-
-            <Project />
         </div>
     )
 }
