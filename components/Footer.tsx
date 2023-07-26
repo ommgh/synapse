@@ -1,4 +1,4 @@
-import { lexend, poppins } from '@/lib/fonts'
+import { poppins } from '@/lib/fonts'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Fade } from 'react-awesome-reveal'
