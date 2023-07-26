@@ -54,12 +54,12 @@ const Form = () => {
             className="min-h-[300px] text-xl border-2 border-black outline outline-2 outline-transparent rounded-2xl w-full p-3 mb-[15px] hover:outline-black focus:outline-black"
             placeholder="Feel free to share your awesome ideas and proposals here. We're all ears and excited to explore creativity together." />
 
-            <label htmlFor="file"
+            <label htmlFor="upload"
             className="text-lg w-full px-3 py-1"
             >File Section:</label>
 
             <div
-            id="file"
+            id="upload"
             className="relative w-full h-[200px] flex justify-center items-center border-2 border-dashed border-black rounded-2xl outline outline-2 outline-black outline-offset-4 hover:cursor-pointer hover:bg-slate-200"
             >
                 {!uploaded ?
@@ -80,6 +80,7 @@ const Form = () => {
                 <input 
                 type="file" 
                 name="file" 
+                id="file"
                 className="absolute top-0 left-0 w-full h-full opacity-0 border-2 border-red-300"
                 multiple
                 onClick={(e: any) => uploadFiles(e.target.files)}
