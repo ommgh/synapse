@@ -96,12 +96,12 @@ const Project = () => {
                                 </div>
                             </Fade>
                     ))}
-                    {showBox && (
+                    {/* {showBox && (
                         <ProjectBox
                             project={boxData}
                             etShowBox={setShowBox}
                         />
-                    )}
+                    )} */}
                 </div>
             </div>
         </div>
