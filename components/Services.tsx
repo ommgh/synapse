@@ -1,4 +1,5 @@
-import { poppins } from "@/lib/fonts"
+import { lexend, poppins } from "@/lib/fonts"
+import Image from "next/image";
 import { useState } from "react";
 import { Zoom } from "react-awesome-reveal";
 
@@ -29,14 +30,25 @@ const Services = () => {
             <div className='relative w-full min-h-[1350px] p-[60px]'>
                 
                 <div
-                className="absolute left-[300px] w-[300px] h-[375px] drop-shadow-xl rounded-xl -rotate-[9deg] flex justify-center items-center font-extrabold text-[56px] text-center tracking-widest transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-pink-300"
+                className="absolute left-[300px] w-[300px] h-[375px] drop-shadow-xl rounded-xl -rotate-[9deg] transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-pink-300"
                 onMouseEnter={() => {
                     hideAll();
                     setShowWeb(true)
                 }}
                 onMouseLeave={() => hideAll()}
                 >
-                    <div className="glass-card">Web dev</div>
+                    <div className="glass-card flex flex-col justify-between items-center p-2">
+                        <p
+                        className={`text-3xl text-center mt-[20px]  ${lexend.className}`}
+                        >Web<br />Development</p>
+
+                        <Image
+                        src={"https://res.cloudinary.com/db7nrltsv/image/upload/v1690368221/undraw_building_websites_i78t_vogdu2.svg"}
+                        width={300}
+                        height={357}
+                        className=""
+                        alt="building website" />
+                    </div>
                 </div>
 
                 <div
@@ -59,14 +71,25 @@ const Services = () => {
                 </div>
 
                 <div
-                className="absolute left-[900px] top-[450px] w-[300px] h-[375px] border-4 border-black rounded-xl rotate-[9deg] p-[10px] flex justify-center items-center font-extrabold text-[56px] text-center tracking-widest transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer bg-black"
+                className="absolute left-[900px] top-[450px] w-[300px] h-[375px] drop-shadow-xl rounded-xl rotate-[9deg] transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-yellow-300"
                 onMouseEnter={() => {
                     hideAll();
                     setShowUIUX(true)
                 }}
                 onMouseLeave={() => hideAll()}
                 >
-                    <div className="glass-card">UI / UX</div>
+                    <div className="glass-card flex flex-col justify-between items-center p-2">
+                        <p
+                        className={`text-3xl text-center mt-[20px]  ${lexend.className}`}
+                        >UI / UX</p>
+
+                        <Image
+                        src={"https://res.cloudinary.com/db7nrltsv/image/upload/v1690369327/undraw_futuristic_interface_re_0cm6_1_cxk7ih.svg"}
+                        width={200}
+                        height={257}
+                        className=""
+                        alt="building website" />
+                    </div>
                 </div>
 
                 <div
@@ -89,14 +112,25 @@ const Services = () => {
                 </div>
 
                 <div
-                className="absolute left-[300px] top-[850px] w-[300px] h-[375px] border-4 border-black rounded-xl -rotate-[9deg] p-[10px] flex justify-center items-center font-extrabold text-[56px] text-center tracking-widest transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer bg-black"
+                className="absolute left-[300px] top-[850px] w-[300px] h-[375px] drop-shadow-xl rounded-xl -rotate-[9deg] transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-orange-300"
                 onMouseEnter={() => {
                     hideAll();
                     setShowApp(true)
                 }}
                 onMouseLeave={() => hideAll()}
                 >
-                    <div className="glass-card">App dev</div>
+                    <div className="glass-card flex flex-col justify-between items-center p-2">
+                        <p
+                        className={`text-3xl text-center mt-[20px]  ${lexend.className}`}
+                        >App<br />Development</p>
+
+                        <Image
+                        src={"https://res.cloudinary.com/db7nrltsv/image/upload/v1690369422/undraw_mobile_application_re_13u3_gria68.svg"}
+                        width={200}
+                        height={357}
+                        className=""
+                        alt="building website" />
+                    </div>
                 </div>
 
                 <div
