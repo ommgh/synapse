@@ -36,7 +36,7 @@ const Footer = () => {
 
                     <p
                     className="tracking-wider text-lg"
-                    >agencysynapse.official@gmail.com</p>
+                    >contact@agencysynapse.com</p>
                 </div>
 
                 <div
@@ -60,7 +60,7 @@ const Footer = () => {
                             className="hover:font-semibold"
                             >Twitter</Link>
 
-                            <Link href={'/'} 
+                            <Link href={'/start-building'} 
                             className="hover:font-semibold"
                             >Start Building</Link>
                         </ul>
@@ -80,19 +80,20 @@ const Footer = () => {
                             className="hover:font-semibold"
                             >Home</Link>
 
-                            <Link href={'/'}
+                            <Link href={'/#about-us'}
                             className="hover:font-semibold"
-                            >Blog</Link>
+                            >About Us</Link>
 
-                            <Link href={'/'}
-                            className="hover:font-semibold"
-                            >About</Link>
-
-                            <Link href={'/'}
+                            <Link href={'/#services'}
                             className="hover:font-semibold"
                             >Services</Link>
 
-                            <Link href={'/'}
+                            <Link href={'/#projects'}
+                            className="hover:font-semibold"
+                            >Projects</Link>
+
+                            <Link href={'https://github.com/AgencySynapse'}
+                            target="_blank"
                             className="hover:font-semibold"
                             >Github</Link>
 
@@ -102,7 +103,7 @@ const Footer = () => {
 
                 <p
                 className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-[20px]"
-                >All rights reserved</p>
+                >&copy; All rights reserved</p>
             </div>
         </footer>
     )
