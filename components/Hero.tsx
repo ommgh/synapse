@@ -59,7 +59,7 @@ const Hero = () => {
                 >Transforming Visions into Reality, One Project at a Time</p>
 
                 <AttentionSeeker
-                effect="rubberBand"
+                effect="pulse"
                 delay={3500}
                 triggerOnce
                 >

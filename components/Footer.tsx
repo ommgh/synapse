@@ -31,7 +31,7 @@ const Footer = () => {
                     >SYNAPSE</p>
 
                     <p
-                    className="tracking-wider text-lg mb-[20px]"
+                    className="tracking-wider text-md mb-[20px]"
                     >Service Provider</p>
 
                     <p

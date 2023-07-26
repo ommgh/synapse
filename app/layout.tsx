@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel='icon' href='https://res.cloudinary.com/db7nrltsv/image/upload/v1687344280/synapse-brain_cibck9.png' />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={inter.className}>
         <Suspense fallback={<Loader />}>{children}</Suspense>

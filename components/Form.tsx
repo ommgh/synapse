@@ -1,17 +1,38 @@
 import { poppins } from "@/lib/fonts";
+import { KnockAPI } from "@/lib/knockapi";
+import { KnockClient } from "@/lib/knockclient";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+interface FormInput {
+    name: string,
+    email: string,
+    message: string,
+}
 
 const Form = () => {
     const router = useRouter()
-    const files: string[] = [];
-    const [uploaded, setUploaded] = useState<boolean>(false)
-    const uploadFiles = (filelist: FileList) => {
-        Array.from(filelist).map(({name}: File, index: number) => {
-            files.push(name);
-        })
-        if(files.length > 0) setUploaded(true);
-        console.log(files)
+    const [userId, setUserId] = useState<string>("")
+    const [formData, setFormData] = useState<FormInput>({
+        name: "",
+        email: "",
+        message: "",
+    })
+
+    const handleChange = (e: any) => {
+        const { name, value } = e.target
+        setFormData((prev: FormInput) => ({
+            ...prev,
+            [name]: value,
+        }))
+        if(name == 'email') setUserId(formData.email.substring(0, formData.email.indexOf('@') + 1))
+        console.log(userId)
+    }
+
+    const handleSubmit = () => {
+        KnockAPI.setIdentify(userId, formData)
+        KnockClient.getAuth(userId);
+        KnockAPI.triggerWorkflow(userId, "admin@10012023", formData);
     }
 
     return (
@@ -20,7 +41,8 @@ const Form = () => {
         className={`flex flex-col justify-center items-center max-w-[700px] m-auto border-dashed border-2 border-black p-[30px] rounded-[32px] ${poppins.className}`}
         onSubmit={(e: any) => {
             e.preventDefault()
-            console.log(e.target)
+            handleSubmit()
+            e.target.reset();
         }}
         >
             <label 
@@ -33,6 +55,7 @@ const Form = () => {
             name="name" 
             id="name"
             className="text-xl border-2 border-black outline outline-2 outline-transparent rounded-2xl w-full p-3 mb-[15px] hover:outline-black focus:outline-black"
+            onChange={handleChange}
             placeholder="Name" />
 
             <label 
@@ -45,6 +68,7 @@ const Form = () => {
             name="email" 
             id="email"
             className="text-xl border-2 border-black outline outline-2 outline-transparent rounded-2xl w-full p-3 mb-[15px] hover:outline-black focus:outline-black"
+            onChange={handleChange}
             placeholder="Email" />
 
             <label 
@@ -56,48 +80,8 @@ const Form = () => {
             id="message"
             name="message" 
             className="min-h-[300px] text-xl border-2 border-black outline outline-2 outline-transparent rounded-2xl w-full p-3 mb-[15px] hover:outline-black focus:outline-black"
+            onChange={handleChange}
             placeholder="Feel free to share your awesome ideas and proposals here. We're all ears and excited to explore creativity together." />
-
-            <label htmlFor="upload"
-            className="text-lg w-full px-3 py-1"
-            >File Section:</label>
-
-            <div
-            id="upload"
-            className="relative w-full h-[200px] flex justify-center items-center border-2 border-dashed border-black rounded-2xl outline outline-2 outline-black outline-offset-4 hover:cursor-pointer hover:bg-slate-200"
-            >
-                {!uploaded ?
-                    <p
-                    className="w-full text-center"
-                    >Upload files or drag or drop them</p>:
-
-                    <div>
-                        hi
-                        {files.map((fileName: string, index: number) => (
-                            <p
-                            className="py-2 px-4 border-dotted border-[3px] border-black rounded-lg"
-                            >{fileName}</p>
-                        ))}
-                    </div>
-                }
-
-                <input 
-                type="file" 
-                name="file" 
-                id="file"
-                className="absolute top-0 left-0 w-full h-full opacity-0 border-2 border-red-300"
-                multiple
-                onClick={(e: any) => uploadFiles(e.target.files)}
-                />
-            </div>
-
-            {uploaded && <button
-            className="py-2 px-7 mt-[34px] text-xl font-medium tracking-wide border-2 border-black rounded-lg outline outline-2 outline-transparent hover:outline-black hover:font-semibold"
-            onClick={() => {
-                files.splice(0, files.length)
-                setUploaded(false)
-            }}
-            >Cancel upload</button>}
 
             <button 
             type="submit"
