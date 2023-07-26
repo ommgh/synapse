@@ -33,7 +33,7 @@ const Form = () => {
             name="name" 
             id="name"
             className="text-xl border-2 border-black outline outline-2 outline-transparent rounded-2xl w-full p-3 mb-[15px] hover:outline-black focus:outline-black"
-            placeholder="name" />
+            placeholder="Name" />
 
             <label 
             htmlFor="email"
@@ -45,7 +45,7 @@ const Form = () => {
             name="email" 
             id="email"
             className="text-xl border-2 border-black outline outline-2 outline-transparent rounded-2xl w-full p-3 mb-[15px] hover:outline-black focus:outline-black"
-            placeholder="email" />
+            placeholder="Email" />
 
             <label 
             htmlFor="message"
