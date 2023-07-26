@@ -1,8 +1,9 @@
 import { poppins } from "@/lib/fonts";
 import { KnockAPI } from "@/lib/knockapi";
 import { KnockClient } from "@/lib/knockclient";
+import { useState } from "react";
+import GreetModel from "./GreetModel";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
 
 interface FormInput {
     name: string,
@@ -18,6 +19,7 @@ const Form = () => {
         email: "",
         message: "",
     })
+    const [showModel, setShowModel] = useState<boolean>(false);
 
     const handleChange = (e: any) => {
         const { name, value } = e.target
@@ -30,9 +32,15 @@ const Form = () => {
     }
 
     const handleSubmit = () => {
-        KnockAPI.setIdentify(userId, formData)
-        KnockClient.getAuth(userId);
-        KnockAPI.triggerWorkflow(userId, "admin@10012023", formData);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // KnockAPI.setIdentify(userId, formData)
+        // KnockClient.getAuth(userId);
+        // KnockAPI.triggerWorkflow(userId, "admin@10012023", formData);
+        setTimeout(() => setShowModel(true), 500)
+        setTimeout(() => {
+            setShowModel(false)
+            router.push('/')
+        }, 4000)
     }
 
     return (
@@ -42,7 +50,7 @@ const Form = () => {
         onSubmit={(e: any) => {
             e.preventDefault()
             handleSubmit()
-            e.target.reset();
+            e.target.reset()
         }}
         >
             <label 
@@ -87,6 +95,7 @@ const Form = () => {
             type="submit"
             className="py-2 px-7 mt-[34px] text-xl font-medium tracking-wide border-2 border-black rounded-lg outline outline-2 outline-transparent hover:outline-black hover:font-semibold"
             >Send</button>
+            {showModel && <GreetModel />}
         </form>
     );
 };
