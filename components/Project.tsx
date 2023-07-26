@@ -26,7 +26,7 @@ const Project = () => {
         >
             <Bounce className="mb-[70px] mt-[100px]" triggerOnce>
                 <p
-                className="text-center text-7xl leading-[110px] font-semibold tracking-widest"
+                className="text-center text-6xl leading-[90px] font-semibold tracking-wider"
                 >Want to see what <br/> innovative minds can create</p>
             </Bounce>
 

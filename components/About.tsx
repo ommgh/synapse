@@ -11,7 +11,7 @@ const About = () => {
             <Slide
             direction="left"
             triggerOnce
-            className='w-full text-[36px] my-[30px] font-bold tracking-wider'
+            className='w-full text-5xl my-[30px] font-bold tracking-wider'
             >We empower your digital future ...</Slide>
 
             <Fade
@@ -24,10 +24,10 @@ const About = () => {
                 className="absolute top-1/2 -left-1/2 translate-x-1/2 translate-y-1/3 ml-[30px] p-5 w-[650px] h-[350px] bg-[#000] text-white flex flex-col gap-[15px] rounded-xl border-2 border-black"
                 >
                     <p
-                    className={`text-3xl font-semibold leading-10 tracking-wide ${lexend.className}`}
+                    className={`text-4xl font-semibold leading-10 tracking-wide ${lexend.className}`}
                     >Why We Do This:</p>
 
-                    <p className='text-xl font-medium leading-7 tracking-wide'>
+                    <p className='text-xl leading-7 tracking-wide'>
                         At our core, we believe that the digital landscape is ever-evolving and presents boundless opportunities for businesses and individuals alike. We are passionate about embracing the dynamic nature of technology and harnessing its potential to transform lives and elevate businesses to new heights. Our drive stems from the desire to empower our clients with cutting-edge solutions that bridge the gap between innovation and success.
                     </p>
                 </div>
@@ -51,27 +51,27 @@ const About = () => {
                         />
                     </div> */}
 
-                    <p className={`text-3xl text-right font-semibold leading-10 tracking-wide ${lexend.className}`}>
+                    <p className={`text-4xl text-right font-semibold leading-10 tracking-wide ${lexend.className}`}>
                         Our Mission
                     </p>
 
                     <p
-                    className='w-[525px] text-justify text-[20px] font-medium leading-7 tracking-wide'
+                    className='w-[525px] text-justify text-xl leading-7 tracking-wide'
                     >
                         Our mission is to be the catalyst that propels our clients forward in the digital realm. Through our expertise in web development, app development, and UI/UX design, we strive to deliver tailor-made solutions that captivate audiences, streamline processes, and unlock growth. We are committed to staying at the forefront of new and secure technologies, ensuring that our clients remain competitive and future-ready.
                     </p>
                 </div>
             </Fade>
 
-            <Flip
-            direction="horizontal"
+            <Fade
+            direction="up"
             triggerOnce
             delay={2000}
             >            
                 <div
-                className="w-[1200px] py-9 px-8 mt-[85px] mb-[30px] flex flex-col items-center gap-[25px] rounded-2xl bg-[#000] outline outline-4 outline-black border-4 border-white text-white"
+                className="w-[1200px] py-9 px-8 mt-[85px] mb-[30px] flex flex-col items-center gap-[25px] rounded-2xl bg-[#000] outline outline-4 outline-black border-4 border-black text-white"
                 >
-                    <p className={`text-3xl text-center font-semibold leading-10 tracking-wide ${lexend.className}`}>
+                    <p className={`text-4xl text-center font-semibold leading-10 tracking-wide ${lexend.className}`}>
                         Vision
                     </p>
 
@@ -83,7 +83,7 @@ const About = () => {
                         Through our unwavering dedication to exceptional quality, client-centric focus, and an agile approach, we aspire to be the trusted companions on our clients' digital journeys. Together, we will build a future where limitless possibilities await, and where success knows no bounds.
                     </p>
                 </div>
-            </Flip>
+            </Fade>
         </div>
     )
 }
