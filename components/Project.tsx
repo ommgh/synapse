@@ -80,8 +80,8 @@ const Project = () => {
                                 >
                                     <Image
                                         src={project.img}
-                                        width={533}
-                                        height={300}
+                                        width={1920}
+                                        height={1080}
                                         alt="project banner"
                                     />
                                 </div>
