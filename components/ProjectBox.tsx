@@ -7,7 +7,7 @@ const ProjectBox = ({ project, setShowBox }: any) => {
     return (
         <Fade duration={500} className="w-screen h-screen z-[5]">
             <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-white z-[4] p-[70px] pb-[10px]">
-                <div className="relative w-1/2 h-full flex flex-col justify-center items-center gap-[30px] pr-9">
+                <div className="relative w-1/2 h-full flex flex-col justify-center items-center gap-[30px] pr-[60px]">
                     <button
                         className="absolute top-0 left-0 py-1 text-lg border-b-2 border-transparent hover:border-black"
                         onClick={() => setShowBox(false)}
@@ -51,13 +51,15 @@ const ProjectBox = ({ project, setShowBox }: any) => {
                     </ul>
                 </div>
 
-                <div className="w-1/2 h-full overflow-hidden">
-                    <Image
-                        src={project.img}
-                        width={700}
-                        height={900}
-                        alt="project banner"
-                    />
+                <div className="w-1/2 h-full">
+                    <div className='w-full h-full flex items-center justify-center'>
+                        <Image
+                            src={project.img}
+                            width={1920}
+                            height={1080}
+                            alt="project banner"
+                        />
+                    </div>
                 </div>
             </div>
         </Fade>
