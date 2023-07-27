@@ -16,16 +16,17 @@ const About = () => {
                 We empower your digital future ...
             </Slide>
 
-            <Fade
-                direction="left"
-                triggerOnce
-                delay={1000}
-                className="w-[1047px] h-[525px] mt-[30px] overflow-hidden">
+            <Fade direction="left" triggerOnce delay={1000}>
+                <div className="w-[1047px] h-[525px] mt-[30px] overflow-hidden">
                     <Image
-                    src={'https://res.cloudinary.com/db7nrltsv/image/upload/v1690416581/pexels-fauxels-3184339_xzqz39.jpg'}
-                    width={1047}
-                    height={525}
-                    alt='team' />
+                        src={
+                            'https://res.cloudinary.com/db7nrltsv/image/upload/v1690416581/pexels-fauxels-3184339_xzqz39.jpg'
+                        }
+                        width={1047}
+                        height={525}
+                        alt="team"
+                    />
+                </div>
             </Fade>
 
             <Fade delay={500} triggerOnce>

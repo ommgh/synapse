@@ -68,9 +68,7 @@ const Project = () => {
                 <div className="grid grid-flow-row lg:grid-cols-2 md:grid-cols-1 justify-center items-center mt-[70px] gap-[200px]">
                     {projectData.map((project: Project, id: number) => (
                         <Fade direction="up" triggerOnce cascade key={id}>
-                            <div
-                                className="flex flex-col items-center"
-                            >
+                            <div className="flex flex-col items-center">
                                 <div
                                     className="w-[350px] h-[400px] flex justify-center items-center overflow-hidden hover:cursor-pointer"
                                     onClick={() => {
