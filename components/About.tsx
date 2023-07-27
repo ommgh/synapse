@@ -22,13 +22,13 @@ const About = () => {
                 delay={1000}
                 className="w-[1047px] h-[525px] mt-[30px] overflow-hidden">
                     <Image
-                    src={'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg'}
+                    src={'https://res.cloudinary.com/db7nrltsv/image/upload/v1690416581/pexels-fauxels-3184339_xzqz39.jpg'}
                     width={1047}
                     height={525}
                     alt='team' />
             </Fade>
 
-            <Fade delay={500}>
+            <Fade delay={500} triggerOnce>
                 <div className="absolute top-[425px] -left-[275px] translate-x-1/2 translate-y-1/3 ml-[30px] p-5 w-[650px] h-[350px] bg-[#000] text-white flex flex-col gap-[15px] rounded-xl border-2 border-black">
                     <p
                         className={`text-4xl font-semibold leading-10 tracking-wide ${lexend.className}`}
