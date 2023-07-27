@@ -12,6 +12,7 @@ interface Project {
     website: string
     img: string
     github: string
+    description: string
     labels: string[]
 }
 
@@ -65,12 +66,12 @@ const Project = () => {
                     </p>
                 </Fade>
 
-                <div className="grid grid-flow-row lg:grid-cols-2 md:grid-cols-1 justify-center items-center mt-[70px] gap-[200px]">
+                <div className="grid grid-flow-row lg:grid-cols-2 md:grid-cols-1 justify-center items-center mt-[70px] gap-[100px]">
                     {projectData.map((project: Project, id: number) => (
                         <Fade direction="up" triggerOnce cascade key={id}>
                             <div className="flex flex-col items-center">
                                 <div
-                                    className="w-[350px] h-[400px] flex justify-center items-center overflow-hidden hover:cursor-pointer"
+                                    className="w-[533px] h-[300px] flex justify-center items-center overflow-hidden hover:cursor-pointer"
                                     onClick={() => {
                                         setBoxData(project)
                                         setIndex(id)
@@ -79,8 +80,8 @@ const Project = () => {
                                 >
                                     <Image
                                         src={project.img}
-                                        width={350}
-                                        height={400}
+                                        width={533}
+                                        height={300}
                                         alt="project banner"
                                     />
                                 </div>
@@ -94,12 +95,12 @@ const Project = () => {
                             </div>
                         </Fade>
                     ))}
-                    {/* {showBox && (
+                    {showBox && (
                         <ProjectBox
                             project={boxData}
                             etShowBox={setShowBox}
                         />
-                    )} */}
+                    )}
                 </div>
             </div>
         </div>

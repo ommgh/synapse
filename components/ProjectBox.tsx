@@ -7,9 +7,9 @@ const ProjectBox = ({ project, setShowBox }: any) => {
     return (
         <Fade duration={500} className="w-screen h-screen z-[5]">
             <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-white z-[4] p-[70px] pb-[10px]">
-                <div className="relative w-1/2 h-full flex flex-col justify-center items-center gap-[50px] pr-9">
+                <div className="relative w-1/2 h-full flex flex-col justify-center items-center gap-[30px] pr-9">
                     <button
-                        className="absolute top-0 left-0 py-2 text-lg border-b-2 border-transparent hover:border-black"
+                        className="absolute top-0 left-0 py-1 text-lg border-b-2 border-transparent hover:border-black"
                         onClick={() => setShowBox(false)}
                     >
                         Close
@@ -19,18 +19,15 @@ const ProjectBox = ({ project, setShowBox }: any) => {
                         {project.name}
                     </p>
 
-                    <p className="w-full text-left text-xl font-medium">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Deserunt, iure omnis id, ducimus maxime quia
-                        deleniti provident ab eaque dolorum dolorem rem debitis
-                        ut? Eveniet debitis quae sed ipsa quo.
+                    <p className="w-full text-left text-xl font-medium whitespace-pre-line">
+                        {project.description}
                     </p>
 
-                    <div className="w-full flex gap-[20px]">
+                    <div className="w-full h-auto flex flex-grow-0 gap-[20px]">
                         {project.labels.map((label: string, index: number) => (
                             <p
                                 key={index}
-                                className="px-3 py-1 bg-slate-200 rounded-lg"
+                                className="w-auto text-center px-3 py-1 bg-slate-200 rounded-lg"
                             >
                                 {label}
                             </p>
@@ -38,19 +35,19 @@ const ProjectBox = ({ project, setShowBox }: any) => {
                     </div>
 
                     <ul className="w-full text-xl font-medium flex gap-[30px] tracking-wide">
-                        <Link
+                        {project.website && <Link
                             href={project.website}
                             className="hover:font-semibold hover:underline-offset-2"
                         >
                             Website
-                        </Link>
+                        </Link>}
 
-                        <Link
+                        {project.github && <Link
                             href={project.github}
                             className="hover:font-semibold hover:underline-offset-2"
                         >
                             Github Repo
-                        </Link>
+                        </Link>}
                     </ul>
                 </div>
 
