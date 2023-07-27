@@ -34,9 +34,9 @@ const Footer = () => {
                         Service Provider
                     </p>
 
-                    <p className="tracking-wider text-lg">
+                    <Link href={'mailto:contact@agencysynapse.com'} className="tracking-wider text-lg">
                         contact@agencysynapse.com
-                    </p>
+                    </Link>
                 </div>
 
                 <div className="flex justify-center items-start gap-[50px] mb-[20px]">

@@ -11,8 +11,9 @@ const About = () => {
             <Slide
                 direction="left"
                 triggerOnce
+                className='w-full'
             >
-                <p className="w-full text-5xl my-[30px] font-bold tracking-wider">
+                <p className="text-left text-5xl my-[30px] font-bold tracking-wider">
                 We empower your digital future 	&#46;&#46;&#46;</p>
             </Slide>
 

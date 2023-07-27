@@ -4,10 +4,10 @@
 
 @layer base {
     ::-webkit-scrollbar {
-        @apply w-4 bg-[#fff];
+        @apply w-3 bg-[#fff];
     }
     ::-webkit-scrollbar-thumb {
-        @apply rounded-lg bg-[#000] hover:bg-[#000] /*color trackbar*/;
+        @apply w-3 rounded-lg bg-[#000] hover:bg-[#000] /*color trackbar*/;
     }
     html {
         -webkit-tap-highlight-color: transparent;
