@@ -13,7 +13,7 @@ const About = () => {
                 triggerOnce
                 className="w-full text-5xl my-[30px] font-bold tracking-wider"
             >
-                We empower your digital future ...
+                We empower your digital future 	&#46;&#46;&#46;
             </Slide>
 
             <Fade direction="left" triggerOnce delay={1000}>
@@ -34,7 +34,7 @@ const About = () => {
                     <p
                         className={`text-4xl font-semibold leading-10 tracking-wide ${lexend.className}`}
                     >
-                        Why We Do This:
+                        Why We Do This
                     </p>
 
                     <p className="text-xl leading-7 tracking-wide">
