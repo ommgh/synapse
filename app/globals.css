@@ -26,6 +26,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .glass-card {
     background: white;
     background: linear-gradient(

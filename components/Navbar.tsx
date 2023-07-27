@@ -28,6 +28,7 @@ const Navbar = () => {
                 <Link
                     href={'/#services'}
                     className="text-lg font-medium hover:font-semibold"
+                    scroll={false}
                 >
                     Services
                 </Link>

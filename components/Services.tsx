@@ -61,7 +61,7 @@ const Services = () => {
                 </AttentionSeeker>
             </div>
 
-            <div className="relative w-full min-h-[1350px] p-[60px]">
+            <div className="relative w-full min-h-[1350px] pt-[60px]">
                 <div className="absolute top-[175px] left-[950px] z-[-1]">
                     <AttentionSeeker effect="wobble" duration={2000}>
                         <Image
