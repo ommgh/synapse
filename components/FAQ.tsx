@@ -11,7 +11,17 @@ interface Queries {
 
 const FAQ = () => {
     const [showAns, setShowAns] = useState<boolean>(false)
-    const [index, setIndex] = useState<number>(-1)
+    const [qIndex, setQIndex] = useState<number>(-1)
+
+    const handleClick = (id: number) => {
+        setQIndex(id)
+        if(id == qIndex && showAns) setShowAns(false)
+        else {
+            setShowAns(false)
+            setShowAns((prev: boolean) => !prev)
+        }
+    }
+    
     return (
         <div className="w-full p-[70px]">
             <div className="w-fit flex m-auto mb-[0px]">
@@ -53,21 +63,18 @@ const FAQ = () => {
 
             {faqs.map(({ id, query, answer }: Queries, index: number) => (
                 <div
-                    className="border-b-[1px] border-black p-4 m-4 hover:cursor-pointer"
+                    className="border-b-[1px] border-black p-4 m-4"
                     key={index}
                 >
                     <p
-                        className="text-2xl"
-                        onClick={() => {
-                            setIndex(id)
-                            setShowAns((prev: boolean) => !prev)
-                        }}
+                        className="text-2xl hover:cursor-pointer"
+                        onClick={() => handleClick(id)}
                         key={id}
                     >
-                        {showAns && index == id ? '-' : '+'} {query}
+                        {showAns && qIndex == id ? '-' : '+'} {query}
                     </p>
 
-                    {showAns && index == id && (
+                    {showAns && qIndex == id && (
                         <p className="text-xl my-[20px]">{answer}</p>
                     )}
                 </div>
