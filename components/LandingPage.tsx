@@ -9,7 +9,7 @@ const LandingPage = () => {
     return (
         <>
             <Hero />
-            {/* <About /> */}
+            <About />
             <Services />
             <Project />
             <FAQ />
