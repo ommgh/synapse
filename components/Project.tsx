@@ -18,7 +18,7 @@ interface Project {
 
 const Project = () => {
     const [showBox, setShowBox] = useState<boolean>(false)
-    const [boxData, setBoxData] = useState<Project>(projectData[0])
+    const [project, setProject] = useState<Project>(projectData[0])
     const [index, setIndex] = useState<number>(-1)
     return (
         <div
@@ -67,40 +67,46 @@ const Project = () => {
                 </Fade>
 
                 <div className="grid grid-flow-row lg:grid-cols-2 md:grid-cols-1 justify-center items-center mt-[70px] gap-[100px]">
-                    {projectData.map((project: Project, id: number) => (
-                        <Fade direction="up" triggerOnce cascade key={id}>
-                            <div className="flex flex-col items-center">
-                                <div
-                                    className="w-[533px] h-[300px] flex justify-center items-center overflow-hidden hover:cursor-pointer"
-                                    onClick={() => {
-                                        setBoxData(project)
-                                        setIndex(id)
-                                        setShowBox(true)
-                                    }}
-                                >
-                                    <Image
-                                        src={project.img}
-                                        width={1920}
-                                        height={1080}
-                                        alt="project banner"
-                                    />
-                                </div>
+                    {projectData.map((data: Project, id: number) => (
+                        <>
+                            <Fade direction="up" triggerOnce cascade key={id}>
+                                <div className="flex flex-col items-center">
+                                    <div
+                                        className="w-[533px] h-[300px] flex justify-center items-center overflow-hidden hover:cursor-pointer"
+                                        onClick={() => {
+                                            setProject(data)
+                                            setIndex(id)
+                                            setShowBox(true)
+                                        }}
+                                    >
+                                        <Image
+                                            src={data.img}
+                                            width={1920}
+                                            height={1080}
+                                            alt="project banner"
+                                        />
+                                    </div>
 
-                                <Link
-                                    className="text-2xl font-semibold tracking-wider my-[20px]"
-                                    href={project.website}
-                                >
-                                    {project.name}
-                                </Link>
-                            </div>
-                        </Fade>
+                                    <Link
+                                        className="text-2xl font-semibold tracking-wider my-[20px]"
+                                        href={data.website}
+                                    >
+                                        {data.name}
+                                    </Link>
+                                </div>
+                            </Fade>
+                            {showBox && index == id && (
+                                <Fade duration={500} className="w-screen h-screen z-[5]">
+                                    <ProjectBox
+                                        {...{
+                                            project,
+                                            setShowBox
+                                        }}
+                                    />
+                                </Fade>
+                            )}
+                        </>
                     ))}
-                    {showBox && (
-                        <ProjectBox
-                            project={boxData}
-                            etShowBox={setShowBox}
-                        />
-                    )}
                 </div>
             </div>
         </div>
