@@ -1,10 +1,11 @@
 import { lexend, poppins } from '@/lib/fonts'
+import Image from 'next/image'
 import { Fade, Slide } from 'react-awesome-reveal'
 
 const About = () => {
     return (
         <div
-            className={`flex flex-col min-h-screen py-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
+            className={`relative flex flex-col min-h-screen py-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
             id="about-us"
         >
             <Slide
@@ -19,9 +20,16 @@ const About = () => {
                 direction="left"
                 triggerOnce
                 delay={1000}
-                className="relative w-[1047px] h-[525px] mt-[30px] bg-[url(https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg)] bg-center bg-no-repeat bg-cover"
-            >
-                <div className="absolute top-1/2 -left-1/2 translate-x-1/2 translate-y-1/3 ml-[30px] p-5 w-[650px] h-[350px] bg-[#000] text-white flex flex-col gap-[15px] rounded-xl border-2 border-black">
+                className="w-[1047px] h-[525px] mt-[30px] overflow-hidden">
+                    <Image
+                    src={'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg'}
+                    width={1047}
+                    height={525}
+                    alt='team' />
+            </Fade>
+
+            <Fade delay={500}>
+                <div className="absolute top-[425px] -left-[275px] translate-x-1/2 translate-y-1/3 ml-[30px] p-5 w-[650px] h-[350px] bg-[#000] text-white flex flex-col gap-[15px] rounded-xl border-2 border-black">
                     <p
                         className={`text-4xl font-semibold leading-10 tracking-wide ${lexend.className}`}
                     >
@@ -63,7 +71,7 @@ const About = () => {
                 </div>
             </Fade>
 
-            <Fade direction="up" triggerOnce delay={2000}>
+            <Fade direction="up" triggerOnce delay={1000}>
                 <div className="w-[1200px] py-9 px-8 mt-[85px] mb-[30px] flex flex-col items-center gap-[25px] rounded-2xl bg-[#000] outline outline-4 outline-black border-4 border-black text-white">
                     <p
                         className={`text-4xl text-center font-semibold leading-10 tracking-wide ${lexend.className}`}
