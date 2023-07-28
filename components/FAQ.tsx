@@ -15,13 +15,13 @@ const FAQ = () => {
 
     const handleClick = (id: number) => {
         setQIndex(id)
-        if(id == qIndex && showAns) setShowAns(false)
+        if (id == qIndex && showAns) setShowAns(false)
         else {
             setShowAns(false)
             setShowAns((prev: boolean) => !prev)
         }
     }
-    
+
     return (
         <div className="w-full p-[70px]">
             <div className="w-fit flex m-auto mb-[0px]">
