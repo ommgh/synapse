@@ -15,20 +15,22 @@ const About = () => {
             </Slide>
 
             <Fade direction="left" triggerOnce delay={1000}>
-                <div className="w-[1047px] h-[525px] mt-[30px] overflow-hidden">
-                    <Image
-                        src={
-                            'https://res.cloudinary.com/db7nrltsv/image/upload/v1690416581/pexels-fauxels-3184339_xzqz39.jpg'
-                        }
-                        width={1047}
-                        height={525}
-                        alt="team"
-                    />
+                <div className='w-[1047px] h-[525px] mt-[30px] bg-[#]'>
+                    <div className="glass-card overflow-hidden flex items-center justify-center">
+                        <Image
+                            src={
+                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690539429/pexels-mikael-blomkvist-6476260_e6qi3c.jpg'
+                            }
+                            width={1047}
+                            height={525}
+                            alt="team"
+                        />
+                    </div>
                 </div>
             </Fade>
 
             <Fade delay={500} triggerOnce>
-                <div className="absolute top-[425px] -left-[275px] translate-x-1/2 translate-y-1/3 ml-[30px] p-5 w-[650px] h-[350px] bg-[#000] text-white flex flex-col gap-[15px] rounded-xl border-2 border-black">
+                <div className="absolute top-[425px] -left-[275px] translate-x-1/2 translate-y-1/3 ml-[30px] p-5 w-[650px] h-[350px] bg-[#000] text-white flex flex-col gap-[15px] rounded-xl">
                     <p
                         className={`text-4xl font-semibold leading-10 tracking-wide ${lexend.className}`}
                     >

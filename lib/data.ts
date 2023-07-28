@@ -59,7 +59,7 @@ export const projectData = [
         id: 5,
         name: 'Ecommerce-Platform: Awesome Cart',
         website: '',
-        img: 'https://res.cloudinary.com/db7nrltsv/image/upload/v1690480570/4_zyg2yb.png',
+        img: 'https://res.cloudinary.com/db7nrltsv/image/upload/v1690535910/Curewell_Homeo_s_Internal_Dashboard_2_ddvzt7.png',
         github: 'https://github.com/kushalbhana/Ecommerce-website',
         description:
             'This is a full-fledged e-commerce website built with modern technologies, designed to provide users with a seamless shopping experience. The project integrates a secure and reliable payment gateway, ensuring smooth transactions for both customers and sellers.',

@@ -69,6 +69,19 @@ const Project = () => {
                 <div className="grid grid-flow-row lg:grid-cols-2 md:grid-cols-1 justify-center items-center mt-[70px] gap-[100px]">
                     {projectData.map((data: Project, id: number) => (
                         <>
+                            {showBox && index == id && (
+                                <Fade
+                                    duration={500}
+                                    className="w-screen h-screen z-[5]"
+                                >
+                                    <ProjectBox
+                                        {...{
+                                            project,
+                                            setShowBox,
+                                        }}
+                                    />
+                                </Fade>
+                            )}
                             <Fade direction="up" triggerOnce cascade key={id}>
                                 <div className="flex flex-col items-center">
                                     <div
@@ -92,19 +105,6 @@ const Project = () => {
                                     </p>
                                 </div>
                             </Fade>
-                            {showBox && index == id && (
-                                <Fade
-                                    duration={500}
-                                    className="w-screen h-screen z-[5]"
-                                >
-                                    <ProjectBox
-                                        {...{
-                                            project,
-                                            setShowBox,
-                                        }}
-                                    />
-                                </Fade>
-                            )}
                         </>
                     ))}
                 </div>
