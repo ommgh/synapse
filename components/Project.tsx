@@ -87,20 +87,20 @@ const Project = () => {
                                         />
                                     </div>
 
-                                    <Link
-                                        className="text-2xl font-semibold tracking-wider my-[20px]"
-                                        href={data.website}
-                                    >
+                                    <p className="text-2xl font-semibold tracking-wider my-[20px]">
                                         {data.name}
-                                    </Link>
+                                    </p>
                                 </div>
                             </Fade>
                             {showBox && index == id && (
-                                <Fade duration={500} className="w-screen h-screen z-[5]">
+                                <Fade
+                                    duration={500}
+                                    className="w-screen h-screen z-[5]"
+                                >
                                     <ProjectBox
                                         {...{
                                             project,
-                                            setShowBox
+                                            setShowBox,
                                         }}
                                     />
                                 </Fade>

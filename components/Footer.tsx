@@ -34,7 +34,10 @@ const Footer = () => {
                         Service Provider
                     </p>
 
-                    <Link href={'mailto:contact@agencysynapse.com'} className="tracking-wider text-lg">
+                    <Link
+                        href={'mailto:contact@agencysynapse.com'}
+                        className="tracking-wider text-lg"
+                    >
                         contact@agencysynapse.com
                     </Link>
                 </div>
@@ -46,11 +49,21 @@ const Footer = () => {
                         </p>
 
                         <ul className="flex flex-col tracking-wide text-lg">
-                            <Link href={'/'} className="hover:font-semibold">
+                            <Link
+                                href={
+                                    'https://www.linkedin.com/company/agencysynapse'
+                                }
+                                target="_blank"
+                                className="hover:font-semibold"
+                            >
                                 LinkedIn
                             </Link>
 
-                            <Link href={'/'} className="hover:font-semibold">
+                            <Link
+                                href={'/'}
+                                target="_blank"
+                                className="hover:font-semibold"
+                            >
                                 Twitter
                             </Link>
 

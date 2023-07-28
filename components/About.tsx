@@ -8,13 +8,10 @@ const About = () => {
             className={`relative flex flex-col min-h-screen py-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
             id="about-us"
         >
-            <Slide
-                direction="left"
-                triggerOnce
-                className='w-full'
-            >
+            <Slide direction="left" triggerOnce className="w-full">
                 <p className="text-left text-5xl my-[30px] font-bold tracking-wider">
-                We empower your digital future 	&#46;&#46;&#46;</p>
+                    We empower your digital future &#46;&#46;&#46;
+                </p>
             </Slide>
 
             <Fade direction="left" triggerOnce delay={1000}>
