@@ -17,7 +17,7 @@ export default function RootLayout({
                 <title>Synapse</title>
                 <meta
                     name="description"
-                    content="Transforming Visions into Reality, One Project at a Time"
+                    content="Agency Synapse: Transforming Visions into Reality, One Project at a Time"
                     key="desc"
                 />
             </head>
