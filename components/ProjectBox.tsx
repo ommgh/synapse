@@ -56,6 +56,7 @@ const ProjectBox = ({ project, setShowBox }: BoxProps) => {
                     {project.website && (
                         <Link
                             href={project.website}
+                            target='_blank'
                             className="border-2 border-black rounded-lg font-medium py-2 px-5 outline outline-2 outline-transparent hover:outline-black"
                         >
                             Website
@@ -65,6 +66,7 @@ const ProjectBox = ({ project, setShowBox }: BoxProps) => {
                     {project.github && (
                         <Link
                             href={project.github}
+                            target='_blank'
                             className="border-2 border-black rounded-lg font-medium py-2 px-5 outline outline-2 outline-transparent hover:outline-black"
                         >
                             Github Repo
