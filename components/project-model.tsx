@@ -21,10 +21,10 @@ interface BoxProps {
 
 export const ProjectModel = ({ project, setShowBox }: BoxProps) => {
     return (
-        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-white z-[4] p-[70px] pb-[10px]">
-            <div className="relative w-1/2 h-full flex flex-col justify-center items-center gap-[30px] pr-[60px]">
+        <div className="w-full h-max flex justify-center items-center bg-white p-[40px] pb-[10px] max-[1280px]:flex-col max-[1280px]:p-[10px] max-[1280px]:pt-[70px]">
+            <div className="w-1/2 h-full flex flex-col justify-center items-start gap-[30px] pr-[60px] max-[1280px]:w-full max-[1280px]:h-auto max-[1280px]:pr-0 max-[1280px]:mb-[20px]">
                 <button
-                    className="absolute top-0 left-0 py-2"
+                    className="py-2"
                     onClick={() => setShowBox(false)}
                 >
                     <Image
@@ -43,11 +43,11 @@ export const ProjectModel = ({ project, setShowBox }: BoxProps) => {
                     {project.description}
                 </p>
 
-                <div className="w-full h-auto grid grid-flow-row grid-cols-[repeat(4,minmax(150px,250px))] gap-[15px]">
+                <div className="w-full flex flex-wrap gap-[10px]">
                     {project.labels.map((label: string, index: number) => (
                         <p
                             key={index}
-                            className="w-auto text-sm flex justify-center items-center text-center px-3 py-1 bg-slate-200 rounded-lg"
+                            className="min-w-fit text-sm flex justify-center items-center text-center px-3 py-1 bg-slate-200 rounded-lg"
                         >
                             {label}
                         </p>
@@ -77,8 +77,8 @@ export const ProjectModel = ({ project, setShowBox }: BoxProps) => {
                 </ul>
             </div>
 
-            <div className="w-1/2 h-full">
-                <div className="w-full h-full flex items-center justify-center">
+            <div className="w-1/2 h-full max-[1280px]:w-full max-[1280px]:h-fit">
+                <div className="w-full h-full flex items-center justify-center ">
                     <Image
                         src={project.img}
                         width={1920}
