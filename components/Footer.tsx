@@ -15,13 +15,11 @@ export const Footer = () => {
                 className="w-full h-fit flex items-center"
             >
                 <Image
-                    src={
-                        '/images/synapse-team.png'
-                    }
+                    src={'/images/synapse-team.png'}
                     width={1980}
                     height={350}
                     alt="synapse team"
-                    className='select-none'
+                    className="select-none"
                 />
             </Fade>
 

@@ -25,7 +25,10 @@ export const FAQ = () => {
     }
 
     return (
-        <div className="w-full p-[70px] max-[960px]:p-[40px] max-[700px]:p-2 max-[700px]:mb-[60px] max-[700px]:pt-[70px]" id='faqs'>
+        <div
+            className="w-full p-[70px] max-[960px]:p-[40px] max-[700px]:p-2 max-[700px]:mb-[60px] max-[700px]:pt-[70px]"
+            id="faqs"
+        >
             <div className="w-fit flex m-auto mb-[0px]">
                 <AttentionSeeker
                     effect="wobble"
@@ -33,9 +36,7 @@ export const FAQ = () => {
                     className="z-[2]"
                 >
                     <Image
-                        src={
-                            '/images/scribble-question.png'
-                        }
+                        src={'/images/scribble-question.png'}
                         width={50}
                         height={50}
                         alt="question mark"
@@ -49,9 +50,7 @@ export const FAQ = () => {
                     triggerOnce={false}
                 >
                     <Image
-                        src={
-                            '/images/scribble-question.png'
-                        }
+                        src={'/images/scribble-question.png'}
                         width={50}
                         height={50}
                         alt="question mark"

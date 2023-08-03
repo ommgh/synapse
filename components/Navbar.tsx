@@ -7,7 +7,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 export const Navbar = () => {
-    const [showSideNav, setShowSideNav] = useState<boolean>(false);
+    const [showSideNav, setShowSideNav] = useState<boolean>(false)
 
     return (
         <div className="fixed top-0 left-0 h-[60px] w-screen flex justify-between items-center z-[10] bg-[#fff] py-4 px-[25px] shadow-md">
@@ -47,7 +47,10 @@ export const Navbar = () => {
                 </Link>
             </ul>
 
-            <button className='min-[650px]:hidden select-none' onClick={() => setShowSideNav(true)}>
+            <button
+                className="min-[650px]:hidden select-none"
+                onClick={() => setShowSideNav(true)}
+            >
                 <Image
                     width="24"
                     height="24"
@@ -56,7 +59,7 @@ export const Navbar = () => {
                 />
             </button>
 
-            {showSideNav && <SideNavbar {...{setShowSideNav}} />}
+            {showSideNav && <SideNavbar {...{ setShowSideNav }} />}
         </div>
     )
 }

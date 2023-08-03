@@ -24,13 +24,11 @@ export const Services = () => {
             <div className="absolute top-[70px] left-[150px] rotate-[20deg]">
                 <AttentionSeeker effect="wobble">
                     <Image
-                        src={
-                            '/images/side-rays.png'
-                        }
+                        src={'/images/side-rays.png'}
                         width={150}
                         height={150}
                         alt="ray"
-                        className='select-none'
+                        className="select-none"
                     />
                 </AttentionSeeker>
             </div>
@@ -41,21 +39,20 @@ export const Services = () => {
                 </p>
             </Zoom>
 
-            <div className="absolute top-[370px] right-[200px] rotate-[150deg] flex ">
+            <div
+                className="absolute top-[370px] right-[200px] rotate-[150deg] flex"
+                onClick={() => hideAll()}
+            >
                 <AttentionSeeker cascade effect="heartBeat">
                     <Image
-                        src={
-                            '/images/sparkle.png'
-                        }
+                        src={'/images/sparkle.png'}
                         width={80}
                         height={80}
                         alt="ray"
                         className="rotate-[-20deg] mr-[10px] select-none"
                     />
                     <Image
-                        src={
-                            '/images/sparkle.png'
-                        }
+                        src={'/images/sparkle.png'}
                         width={80}
                         height={80}
                         alt="ray"
@@ -68,9 +65,7 @@ export const Services = () => {
                 <div className="absolute top-[175px] left-[950px] z-[-1]">
                     <AttentionSeeker effect="wobble" duration={2000}>
                         <Image
-                            src={
-                                '/images/scribble-triangles.png'
-                            }
+                            src={'/images/scribble-triangles.png'}
                             alt="triangles"
                             width={100}
                             height={100}
@@ -86,6 +81,7 @@ export const Services = () => {
                         setShowWeb(true)
                     }}
                     onMouseLeave={() => hideAll()}
+                    onClick={() => hideAll()}
                 >
                     <div className="glass-card flex flex-col justify-between items-center p-2">
                         <p
@@ -97,9 +93,7 @@ export const Services = () => {
                         </p>
 
                         <Image
-                            src={
-                                '/images/web-dev.svg'
-                            }
+                            src={'/images/web-dev.svg'}
                             width={300}
                             height={357}
                             className="select-none"
@@ -135,9 +129,7 @@ export const Services = () => {
                 <div className="absolute top-[650px] left-[350px]">
                     <AttentionSeeker effect="swing" duration={2000}>
                         <Image
-                            src={
-                                '/images/scribble-box.png'
-                            }
+                            src={'/images/scribble-box.png'}
                             alt="box"
                             width={100}
                             height={100}
@@ -153,6 +145,7 @@ export const Services = () => {
                         setShowUIUX(true)
                     }}
                     onMouseLeave={() => hideAll()}
+                    onClick={() => hideAll()}
                 >
                     <div className="glass-card flex flex-col justify-between items-center p-2">
                         <p
@@ -162,9 +155,7 @@ export const Services = () => {
                         </p>
 
                         <Image
-                            src={
-                                '/images/ui-ux.svg'
-                            }
+                            src={'/images/ui-ux.svg'}
                             width={200}
                             height={257}
                             className=""
@@ -200,9 +191,7 @@ export const Services = () => {
                 <div className="absolute top-[1150px] left-[900px]">
                     <AttentionSeeker effect="tada" duration={2000}>
                         <Image
-                            src={
-                                '/images/scribble-phone.png'
-                            }
+                            src={'/images/scribble-phone.png'}
                             alt="phone"
                             width={100}
                             height={100}
@@ -218,6 +207,7 @@ export const Services = () => {
                         setShowApp(true)
                     }}
                     onMouseLeave={() => hideAll()}
+                    onClick={() => hideAll()}
                 >
                     <div className="glass-card flex flex-col justify-between items-center p-2">
                         <p
@@ -229,9 +219,7 @@ export const Services = () => {
                         </p>
 
                         <Image
-                            src={
-                                '/images/app-dev.svg'
-                            }
+                            src={'/images/app-dev.svg'}
                             width={200}
                             height={357}
                             className=""

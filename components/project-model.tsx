@@ -23,16 +23,13 @@ export const ProjectModel = ({ project, setShowBox }: BoxProps) => {
     return (
         <div className="w-full h-max flex justify-center items-center bg-white p-[40px] pb-[10px] max-[1280px]:flex-col max-[1280px]:p-[10px] max-[1280px]:pt-[70px]">
             <div className="w-1/2 h-full flex flex-col justify-center items-start gap-[30px] pr-[60px] max-[1280px]:w-full max-[1280px]:h-auto max-[1280px]:pr-0 max-[1280px]:mb-[20px]">
-                <button
-                    className="py-2"
-                    onClick={() => setShowBox(false)}
-                >
+                <button className="py-2" onClick={() => setShowBox(false)}>
                     <Image
                         width="34"
                         height="34"
                         src="/images/close.png"
                         alt="close"
-                        className='select-none'
+                        className="select-none"
                     />
                 </button>
 
@@ -59,7 +56,7 @@ export const ProjectModel = ({ project, setShowBox }: BoxProps) => {
                     {project.website && (
                         <Link
                             href={project.website}
-                            target='_blank'
+                            target="_blank"
                             className="border-2 border-black rounded-lg font-medium py-2 px-5 outline outline-2 outline-transparent hover:outline-black"
                         >
                             Website
@@ -69,7 +66,7 @@ export const ProjectModel = ({ project, setShowBox }: BoxProps) => {
                     {project.github && (
                         <Link
                             href={project.github}
-                            target='_blank'
+                            target="_blank"
                             className="border-2 border-black rounded-lg font-medium py-2 px-5 outline outline-2 outline-transparent hover:outline-black"
                         >
                             Github Repo
@@ -85,7 +82,7 @@ export const ProjectModel = ({ project, setShowBox }: BoxProps) => {
                         width={1920}
                         height={1080}
                         alt="project banner"
-                        className='select-none'
+                        className="select-none"
                     />
                 </div>
             </div>

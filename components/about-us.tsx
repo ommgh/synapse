@@ -17,16 +17,14 @@ export const About = () => {
             </Slide>
 
             <Fade direction="left" triggerOnce delay={1000}>
-                <div className='w-[1047px] h-[525px] mt-[30px] max-[1070px]:w-full max-[1070px]:h-fit max-[1070px]:p-3'>
+                <div className="w-[1047px] h-[525px] mt-[30px] max-[1070px]:w-full max-[1070px]:h-fit max-[1070px]:p-3">
                     <div className="w-full h-full overflow-hidden flex items-center justify-center">
                         <Image
-                            src={
-                                '/images/about-bg.jpg'
-                            }
+                            src={'/images/about-bg.jpg'}
                             width={1047}
                             height={525}
                             alt="team"
-                            className='select-none'
+                            className="select-none"
                         />
                     </div>
                 </div>

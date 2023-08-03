@@ -16,9 +16,7 @@ export const Home = () => {
                 className="absolute left-0 w-[350px] h-[350px] max-[1100px]:hidden"
             >
                 <Image
-                    src={
-                        '/images/scribble-triangle.png'
-                    }
+                    src={'/images/scribble-triangle.png'}
                     width={350}
                     height={350}
                     alt="doodle triangle"
@@ -33,9 +31,7 @@ export const Home = () => {
                 className="absolute top-[150px] left-[75%] w-[350px] h-[350px] max-[1450px]:left-[70%] max-[1235px]:left-[65%] max-[1100px]:hidden"
             >
                 <Image
-                    src={
-                        '/images/scribble-square.png'
-                    }
+                    src={'/images/scribble-square.png'}
                     width={250}
                     height={250}
                     alt="doodle square"
@@ -43,9 +39,7 @@ export const Home = () => {
                 />
 
                 <Image
-                    src={
-                        '/images/doodle-circle.png'
-                    }
+                    src={'/images/doodle-circle.png'}
                     width={100}
                     height={100}
                     alt="doodle cicle"
@@ -53,13 +47,13 @@ export const Home = () => {
                 />
             </Fade>
 
-            <AttentionSeeker delay={750} effect='tada'>
+            <AttentionSeeker delay={750} effect="tada">
                 <Image
-                src={'/images/scribble-rays.png'}
-                width={100}
-                height={100}
-                alt='doodle ray'
-                className='min-[1100px]:hidden rotate-[-60deg] mt-[-30px] select-none'
+                    src={'/images/scribble-rays.png'}
+                    width={100}
+                    height={100}
+                    alt="doodle ray"
+                    className="min-[1100px]:hidden rotate-[-60deg] mt-[-30px] select-none"
                 />
             </AttentionSeeker>
 

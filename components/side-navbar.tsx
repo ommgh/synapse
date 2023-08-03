@@ -1,10 +1,10 @@
 'use client'
 
-import { poppins } from "@/lib/fonts"
-import Image from "next/image"
-import Link from "next/link"
-import { Dispatch, SetStateAction } from "react"
-import { Zoom } from "react-awesome-reveal"
+import { poppins } from '@/lib/fonts'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Dispatch, SetStateAction } from 'react'
+import { Zoom } from 'react-awesome-reveal'
 
 interface ShowSideNav {
     setShowSideNav: Dispatch<SetStateAction<boolean>>
@@ -13,12 +13,10 @@ interface ShowSideNav {
 export const SideNavbar = ({ setShowSideNav }: ShowSideNav) => {
     return (
         <Zoom direction="left" className="fixed top-0 left-0">
-            <div
-            className="w-screen h-screen z-[20] bg-white flex flex-col items-center justify-center"
-            >
-                <button 
-                className="absolute top-0 left-0 p-4"
-                onClick={() => setShowSideNav(false)}
+            <div className="w-screen h-screen z-[20] bg-white flex flex-col items-center justify-center">
+                <button
+                    className="absolute top-0 left-0 p-4"
+                    onClick={() => setShowSideNav(false)}
                 >
                     <Image
                         width="34"
@@ -73,7 +71,9 @@ export const SideNavbar = ({ setShowSideNav }: ShowSideNav) => {
                     </Link>
                 </div>
 
-                <span className="anuratiFont absolute bottom-[70px] text-md select-none">SYNAPSE</span>
+                <span className="anuratiFont absolute bottom-[70px] text-md select-none">
+                    SYNAPSE
+                </span>
             </div>
         </Zoom>
     )
