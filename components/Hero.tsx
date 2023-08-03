@@ -28,7 +28,7 @@ const Hero = () => {
                 direction="right"
                 cascade
                 delay={500}
-                className="absolute top-[150px] left-[75%] w-[350px] h-[350px] border-2 border-black max-[1450px]:left-[70%] max-[1235px]:left-[65%] max-[1100px]:hidden"
+                className="absolute top-[150px] left-[75%] w-[350px] h-[350px] max-[1450px]:left-[70%] max-[1235px]:left-[65%] max-[1100px]:hidden"
             >
                 <Image
                     src={

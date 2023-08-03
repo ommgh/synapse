@@ -1,15 +1,19 @@
 import { poppins } from '@/lib/fonts'
 import Link from 'next/link'
+import { SideNavbar } from './side-navbar'
+import { useState } from 'react'
 
 const Navbar = () => {
+    const [showSideNav, setShowSideNav] = useState<boolean>(false);
+
     return (
-        <div className="fixed top-0 left-0 h-[60px] w-screen flex z-[10] bg-[#fff] py-4 px-[25px] shadow-md">
+        <div className="fixed top-0 left-0 h-[60px] w-screen flex justify-between items-center z-[10] bg-[#fff] py-4 px-[25px] shadow-md">
             <Link href={'/'} className="anuratiFont text-xl">
                 SYNAPSE
             </Link>
 
             <ul
-                className={`absolute right-0 mr-4 px-[30px] flex justify-center items-center gap-[30px] ${poppins.className}`}
+                className={`px-[30px] flex justify-center items-center gap-[30px] max-[650px]:hidden ${poppins.className}`}
             >
                 <Link
                     href={'/'}
@@ -28,7 +32,6 @@ const Navbar = () => {
                 <Link
                     href={'/#services'}
                     className="text-lg font-medium hover:font-semibold"
-                    scroll={false}
                 >
                     Services
                 </Link>
@@ -40,6 +43,12 @@ const Navbar = () => {
                     Projects
                 </Link>
             </ul>
+
+            <button className='min-[650px]:hidden' onClick={() => setShowSideNav(true)}>
+            nav
+            </button>
+
+            {showSideNav && <SideNavbar {...{setShowSideNav}} />}
         </div>
     )
 }
