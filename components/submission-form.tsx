@@ -1,3 +1,5 @@
+'use client'
+
 import { poppins } from '@/lib/fonts'
 import { KnockAPI } from '@/lib/knockapi'
 import { KnockClient } from '@/lib/knockclient'

@@ -1,3 +1,5 @@
+'use client'
+
 import { poppins } from '@/lib/fonts'
 import Link from 'next/link'
 import { SideNavbar } from './side-navbar'

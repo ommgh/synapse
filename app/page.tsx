@@ -1,5 +1,3 @@
-'use client'
-
 import { LandingPage } from '@/components/main-container'
 import { Navbar } from '@/components/navbar'
 

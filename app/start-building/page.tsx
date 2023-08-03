@@ -1,5 +1,3 @@
-'use client'
-
 import { FormPage } from '@/components/form-page'
 import { Navbar } from '@/components/navbar'
 

@@ -1,3 +1,5 @@
+'use client'
+
 import { projectData } from '@/lib/data'
 import { poppins } from '@/lib/fonts'
 import Image from 'next/image'

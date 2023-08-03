@@ -1,3 +1,5 @@
+'use client'
+
 import { lexend, poppins } from '@/lib/fonts'
 import Image from 'next/image'
 import { Fade, Slide } from 'react-awesome-reveal'
