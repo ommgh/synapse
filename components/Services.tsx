@@ -1,9 +1,11 @@
+'use client'
+
 import { lexend, poppins } from '@/lib/fonts'
 import Image from 'next/image'
 import { useState } from 'react'
 import { AttentionSeeker, Fade, Zoom } from 'react-awesome-reveal'
 
-const Services = () => {
+export const Services = () => {
     const [showWeb, setShowWeb] = useState(false)
     const [showUIUX, setShowUIUX] = useState(false)
     const [showApp, setShowApp] = useState(false)
@@ -22,12 +24,11 @@ const Services = () => {
             <div className="absolute top-[70px] left-[150px] rotate-[20deg]">
                 <AttentionSeeker effect="wobble">
                     <Image
-                        src={
-                            'https://res.cloudinary.com/db7nrltsv/image/upload/v1690373183/Untitled_design_14_wjye2i.png'
-                        }
+                        src={'/images/side-rays.png'}
                         width={150}
                         height={150}
                         alt="ray"
+                        className="select-none"
                     />
                 </AttentionSeeker>
             </div>
@@ -38,25 +39,24 @@ const Services = () => {
                 </p>
             </Zoom>
 
-            <div className="absolute top-[370px] right-[200px] rotate-[150deg] flex ">
+            <div
+                className="absolute top-[370px] right-[200px] rotate-[150deg] flex"
+                onClick={() => hideAll()}
+            >
                 <AttentionSeeker cascade effect="heartBeat">
                     <Image
-                        src={
-                            'https://res.cloudinary.com/db7nrltsv/image/upload/v1690373184/Untitled_design_16_tbyrqw.png'
-                        }
+                        src={'/images/sparkle.png'}
                         width={80}
                         height={80}
                         alt="ray"
-                        className="rotate-[-20deg] mr-[10px]"
+                        className="rotate-[-20deg] mr-[10px] select-none"
                     />
                     <Image
-                        src={
-                            'https://res.cloudinary.com/db7nrltsv/image/upload/v1690373184/Untitled_design_16_tbyrqw.png'
-                        }
+                        src={'/images/sparkle.png'}
                         width={80}
                         height={80}
                         alt="ray"
-                        className="rotate-[10deg]"
+                        className="rotate-[10deg] select-none"
                     />
                 </AttentionSeeker>
             </div>
@@ -65,13 +65,11 @@ const Services = () => {
                 <div className="absolute top-[175px] left-[950px] z-[-1]">
                     <AttentionSeeker effect="wobble" duration={2000}>
                         <Image
-                            src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690373188/Untitled_design_17_hyusqw.png'
-                            }
+                            src={'/images/scribble-triangles.png'}
                             alt="triangles"
                             width={100}
                             height={100}
-                            className="rotate-[30deg]"
+                            className="rotate-[30deg] select-none"
                         />
                     </AttentionSeeker>
                 </div>
@@ -83,6 +81,7 @@ const Services = () => {
                         setShowWeb(true)
                     }}
                     onMouseLeave={() => hideAll()}
+                    onClick={() => hideAll()}
                 >
                     <div className="glass-card flex flex-col justify-between items-center p-2">
                         <p
@@ -94,12 +93,10 @@ const Services = () => {
                         </p>
 
                         <Image
-                            src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690368221/undraw_building_websites_i78t_vogdu2.svg'
-                            }
+                            src={'/images/web-dev.svg'}
                             width={300}
                             height={357}
-                            className=""
+                            className="select-none"
                             alt="building website"
                         />
                     </div>
@@ -132,13 +129,11 @@ const Services = () => {
                 <div className="absolute top-[650px] left-[350px]">
                     <AttentionSeeker effect="swing" duration={2000}>
                         <Image
-                            src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690377783/Untitled_design_4_nldou2.png'
-                            }
-                            alt="square"
+                            src={'/images/scribble-box.png'}
+                            alt="box"
                             width={100}
                             height={100}
-                            className="rotate-[-30deg]"
+                            className="rotate-[-30deg] select-none"
                         />
                     </AttentionSeeker>
                 </div>
@@ -150,6 +145,7 @@ const Services = () => {
                         setShowUIUX(true)
                     }}
                     onMouseLeave={() => hideAll()}
+                    onClick={() => hideAll()}
                 >
                     <div className="glass-card flex flex-col justify-between items-center p-2">
                         <p
@@ -159,13 +155,11 @@ const Services = () => {
                         </p>
 
                         <Image
-                            src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690369327/undraw_futuristic_interface_re_0cm6_1_cxk7ih.svg'
-                            }
+                            src={'/images/ui-ux.svg'}
                             width={200}
                             height={257}
                             className=""
-                            alt="building website"
+                            alt="ui ux"
                         />
                     </div>
                 </div>
@@ -197,10 +191,8 @@ const Services = () => {
                 <div className="absolute top-[1150px] left-[900px]">
                     <AttentionSeeker effect="tada" duration={2000}>
                         <Image
-                            src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690380408/Untitled_design_7_r2ivbs.png'
-                            }
-                            alt="triangles"
+                            src={'/images/scribble-phone.png'}
+                            alt="phone"
                             width={100}
                             height={100}
                             className="rotate-[30deg]"
@@ -215,6 +207,7 @@ const Services = () => {
                         setShowApp(true)
                     }}
                     onMouseLeave={() => hideAll()}
+                    onClick={() => hideAll()}
                 >
                     <div className="glass-card flex flex-col justify-between items-center p-2">
                         <p
@@ -226,9 +219,7 @@ const Services = () => {
                         </p>
 
                         <Image
-                            src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690369422/undraw_mobile_application_re_13u3_gria68.svg'
-                            }
+                            src={'/images/app-dev.svg'}
                             width={200}
                             height={357}
                             className=""
@@ -263,5 +254,3 @@ const Services = () => {
         </div>
     )
 }
-
-export default Services

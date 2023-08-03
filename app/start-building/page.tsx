@@ -1,7 +1,5 @@
-'use client'
-
-import FormPage from '@/components/FormPage'
-import Navbar from '@/components/Navbar'
+import { FormPage } from '@/components/form-page'
+import { Navbar } from '@/components/navbar'
 
 export default function Page() {
     return (

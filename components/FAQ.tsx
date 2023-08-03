@@ -1,3 +1,5 @@
+'use client'
+
 import { faqs } from '@/lib/data'
 import Image from 'next/image'
 import { useState } from 'react'
@@ -9,7 +11,7 @@ interface Queries {
     answer: string
 }
 
-const FAQ = () => {
+export const FAQ = () => {
     const [showAns, setShowAns] = useState<boolean>(false)
     const [qIndex, setQIndex] = useState<number>(-1)
 
@@ -23,7 +25,10 @@ const FAQ = () => {
     }
 
     return (
-        <div className="w-full p-[70px]">
+        <div
+            className="w-full p-[70px] max-[960px]:p-[40px] max-[700px]:p-2 max-[700px]:mb-[60px] max-[700px]:pt-[70px]"
+            id="faqs"
+        >
             <div className="w-fit flex m-auto mb-[0px]">
                 <AttentionSeeker
                     effect="wobble"
@@ -31,9 +36,7 @@ const FAQ = () => {
                     className="z-[2]"
                 >
                     <Image
-                        src={
-                            'https://res.cloudinary.com/db7nrltsv/image/upload/v1690294091/Untitled_design_11_cigk4r.png'
-                        }
+                        src={'/images/scribble-question.png'}
                         width={50}
                         height={50}
                         alt="question mark"
@@ -47,9 +50,7 @@ const FAQ = () => {
                     triggerOnce={false}
                 >
                     <Image
-                        src={
-                            'https://res.cloudinary.com/db7nrltsv/image/upload/v1690294091/Untitled_design_11_cigk4r.png'
-                        }
+                        src={'/images/scribble-question.png'}
                         width={50}
                         height={50}
                         alt="question mark"
@@ -57,7 +58,8 @@ const FAQ = () => {
                     />
                 </AttentionSeeker>
             </div>
-            <p className="text-center text-5xl leading-[110px] font-semibold tracking-wide mb-[50px]">
+
+            <p className="text-center text-5xl leading-[110px] font-semibold tracking-wide mb-[50px] max-[960px]:w-full max-[960px]:p-2 max-[960px]:text-4xl max-[960px]:leading-[60px]">
                 Have some queries, we got you!
             </p>
 
@@ -82,5 +84,3 @@ const FAQ = () => {
         </div>
     )
 }
-
-export default FAQ

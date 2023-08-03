@@ -1,9 +1,11 @@
+'use client'
+
 import { poppins } from '@/lib/fonts'
 import { KnockAPI } from '@/lib/knockapi'
 import { KnockClient } from '@/lib/knockclient'
 import { useState } from 'react'
-import GreetModel from './GreetModel'
 import { useRouter } from 'next/navigation'
+import { MessageModel } from './message-model'
 
 interface FormInput {
     name: string
@@ -11,7 +13,7 @@ interface FormInput {
     message: string
 }
 
-const Form = () => {
+export const Form = () => {
     const router = useRouter()
     const [userId, setUserId] = useState<string>('')
     const [showModel, setShowModel] = useState<boolean>(false)
@@ -48,7 +50,7 @@ const Form = () => {
     return (
         <form
             encType="multipart/form-data"
-            className={`flex flex-col justify-center items-center max-w-[700px] m-auto border-dashed border-2 border-black p-[30px] rounded-[32px] ${poppins.className}`}
+            className={`flex flex-col justify-center items-center max-w-[700px] m-auto border-dashed border-2 border-black p-[30px] rounded-[32px] max-[550px]:p-[15px] ${poppins.className}`}
             onSubmit={(e: any) => {
                 e.preventDefault()
                 handleSubmit()
@@ -99,9 +101,7 @@ const Form = () => {
             >
                 Send
             </button>
-            {showModel && <GreetModel />}
+            {showModel && <MessageModel />}
         </form>
     )
 }
-
-export default Form
