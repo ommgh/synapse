@@ -74,7 +74,7 @@ export const Projects = () => {
                             {showBox && index == id && (
                                 <Fade
                                     duration={500}
-                                    className="fixed top-0 left-0 w-screen h-screen z-[5] overflow-x-hidden overflow-y-scroll"
+                                    className="fixed top-0 left-0 w-screen h-screen bg-white min-[1280px]:flex min-[1280px]:justify-center min-[1280px]:items-center z-[5] overflow-x-hidden overflow-y-scroll"
                                 >
                                     <ProjectModel
                                         {...{
