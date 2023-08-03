@@ -34,7 +34,7 @@ export const Services = () => {
             </div>
 
             <Zoom triggerOnce duration={500} delay={500}>
-                <p className="max-w-[881px] text-center text-6xl leading-[90px] font-semibold tracking-wider my-[90px]">
+                <p className="max-w-[881px] text-center text-6xl leading-[90px] font-semibold tracking-wider my-[90px] max-[1030px]:text-5xl max-[1070px]:max-w-full">
                     We provide all the services you need right in your product
                 </p>
             </Zoom>
