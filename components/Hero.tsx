@@ -6,7 +6,7 @@ import { Fade, AttentionSeeker } from 'react-awesome-reveal'
 const Hero = () => {
     return (
         <div
-            className="relative h-screen w-screen flex flex-col justify-center border-2 border-black items-center pt-[60px] select-none"
+            className="relative h-screen w-screen flex flex-col justify-center items-center pt-[60px] select-none"
             id="home"
         >
             <Fade
