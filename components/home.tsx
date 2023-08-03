@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Fade, AttentionSeeker } from 'react-awesome-reveal'
 
-const Hero = () => {
+export const Home = () => {
     return (
         <div
             className="relative h-screen w-screen flex flex-col justify-center items-center pt-[60px] select-none"
@@ -90,5 +90,3 @@ const Hero = () => {
         </div>
     )
 }
-
-export default Hero

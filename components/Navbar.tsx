@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { SideNavbar } from './side-navbar'
 import { useState } from 'react'
 
-const Navbar = () => {
+export const Navbar = () => {
     const [showSideNav, setShowSideNav] = useState<boolean>(false);
 
     return (
@@ -52,5 +52,3 @@ const Navbar = () => {
         </div>
     )
 }
-
-export default Navbar

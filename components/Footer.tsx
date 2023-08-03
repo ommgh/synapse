@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Fade } from 'react-awesome-reveal'
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <footer>
             <Fade
@@ -125,5 +125,3 @@ const Footer = () => {
         </footer>
     )
 }
-
-export default Footer

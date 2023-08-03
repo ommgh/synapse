@@ -1,6 +1,6 @@
 import { Fade } from 'react-awesome-reveal'
 
-const GreetModel = () => {
+export const MessageModel = () => {
     return (
         <div className="absolute top-0 left-0 bg-black bg-opacity-25 w-screen h-screen flex justify-center items-center z-[2]">
             <Fade direction="up">
@@ -17,5 +17,3 @@ const GreetModel = () => {
         </div>
     )
 }
-
-export default GreetModel

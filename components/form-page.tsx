@@ -1,8 +1,8 @@
 import { lexend } from '@/lib/fonts'
-import Footer from './Footer'
-import Form from './Form'
+import { Footer } from './footer'
+import { Form } from './submission-form'
 
-const FormPage = () => {
+export const FormPage = () => {
     return (
         <>
             <div className="w-screen min-h-screen p-[80px] max-[850px]:p-[40px] max-[850px]:pt-[80px] max-[550px]:p-[20px] max-[550px]:pt-[80px]">
@@ -18,5 +18,3 @@ const FormPage = () => {
         </>
     )
 }
-
-export default FormPage

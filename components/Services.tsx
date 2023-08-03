@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { AttentionSeeker, Fade, Zoom } from 'react-awesome-reveal'
 
-const Services = () => {
+export const Services = () => {
     const [showWeb, setShowWeb] = useState(false)
     const [showUIUX, setShowUIUX] = useState(false)
     const [showApp, setShowApp] = useState(false)
@@ -263,5 +263,3 @@ const Services = () => {
         </div>
     )
 }
-
-export default Services

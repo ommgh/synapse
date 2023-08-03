@@ -9,7 +9,7 @@ interface Queries {
     answer: string
 }
 
-const FAQ = () => {
+export const FAQ = () => {
     const [showAns, setShowAns] = useState<boolean>(false)
     const [qIndex, setQIndex] = useState<number>(-1)
 
@@ -23,7 +23,7 @@ const FAQ = () => {
     }
 
     return (
-        <div className="w-full p-[70px] max-[960px]:p-[40px] max-[700px]:p-2 max-[700px]:mb-[60px]">
+        <div className="w-full p-[70px] max-[960px]:p-[40px] max-[700px]:p-2 max-[700px]:mb-[60px]" id='#faqs'>
             <div className="w-fit flex m-auto mb-[0px]">
                 <AttentionSeeker
                     effect="wobble"
@@ -83,5 +83,3 @@ const FAQ = () => {
         </div>
     )
 }
-
-export default FAQ

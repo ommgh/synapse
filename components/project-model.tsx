@@ -17,7 +17,7 @@ interface BoxProps {
     setShowBox: Dispatch<SetStateAction<boolean>>
 }
 
-const ProjectBox = ({ project, setShowBox }: BoxProps) => {
+export const ProjectModel = ({ project, setShowBox }: BoxProps) => {
     return (
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-white z-[4] p-[70px] pb-[10px]">
             <div className="relative w-1/2 h-full flex flex-col justify-center items-center gap-[30px] pr-[60px]">
@@ -88,5 +88,3 @@ const ProjectBox = ({ project, setShowBox }: BoxProps) => {
         </div>
     )
 }
-
-export default ProjectBox

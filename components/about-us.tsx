@@ -2,7 +2,7 @@ import { lexend, poppins } from '@/lib/fonts'
 import Image from 'next/image'
 import { Fade, Slide } from 'react-awesome-reveal'
 
-const About = () => {
+export const About = () => {
     return (
         <div
             className={`relative flex flex-col min-h-screen py-[50px] px-[70px] max-[1030px]:px-0 w-screen justify-center items-center ${poppins.className}`}
@@ -103,5 +103,3 @@ const About = () => {
         </div>
     )
 }
-
-export default About

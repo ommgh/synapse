@@ -1,9 +1,9 @@
 import { projectData } from '@/lib/data'
 import { poppins } from '@/lib/fonts'
 import Image from 'next/image'
-import ProjectBox from './ProjectBox'
 import { useState } from 'react'
 import { Bounce, Fade } from 'react-awesome-reveal'
+import { ProjectModel } from './project-model'
 
 interface Project {
     id: number
@@ -15,7 +15,7 @@ interface Project {
     labels: string[]
 }
 
-const Project = () => {
+export const Projects = () => {
     const [showBox, setShowBox] = useState<boolean>(false)
     const [project, setProject] = useState<Project>(projectData[0])
     const [index, setIndex] = useState<number>(-1)
@@ -74,7 +74,7 @@ const Project = () => {
                                     duration={500}
                                     className="w-screen h-screen z-[5]"
                                 >
-                                    <ProjectBox
+                                    <ProjectModel
                                         {...{
                                             project,
                                             setShowBox,
@@ -112,5 +112,3 @@ const Project = () => {
         </div>
     )
 }
-
-export default Project
