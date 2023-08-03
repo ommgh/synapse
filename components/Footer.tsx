@@ -23,9 +23,9 @@ const Footer = () => {
             </Fade>
 
             <div
-                className={`relative flex justify-between h-auto py-[50px] px-[70px] w-screen bg-black text-white ${poppins.className}`}
+                className={`relative flex justify-between h-auto py-[50px] px-[70px] w-screen bg-black text-white max-[850px]:flex-col max-[500px]:px-[20px] max-[500px]:py-[30px] ${poppins.className}`}
             >
-                <div className="flex flex-col items-center m-[20px] ml-0">
+                <div className="flex flex-col items-center m-[20px] ml-0 max-[500px]:m-auto max-[500px]:pb-[30px]">
                     <p className="anuratiFont text-[44px] tracking-wider">
                         SYNAPSE
                     </p>
@@ -42,8 +42,8 @@ const Footer = () => {
                     </Link>
                 </div>
 
-                <div className="flex justify-center items-start gap-[50px] mb-[20px]">
-                    <div className="flex flex-col items-start mx-[20px]">
+                <div className="flex justify-center items-start gap-[50px] mb-[20px] max-[500px]:mb-[35px]">
+                    <div className="flex flex-col items-start mx-[20px] max-[550px]:m-0">
                         <p className="text-xl font-semibold tracking-wide my-[10px]">
                             Get in touch
                         </p>
@@ -76,7 +76,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="flex flex-col items-start mx-[20px]">
+                    <div className="flex flex-col items-start mx-[20px] max-[550px]:m-0">
                         <p className="text-xl font-semibold tracking-wide my-[10px]">
                             References
                         </p>
