@@ -25,7 +25,7 @@ export const FAQ = () => {
     }
 
     return (
-        <div className="w-full p-[70px] max-[960px]:p-[40px] max-[700px]:p-2 max-[700px]:mb-[60px]" id='#faqs'>
+        <div className="w-full p-[70px] max-[960px]:p-[40px] max-[700px]:p-2 max-[700px]:mb-[60px] max-[700px]:pt-[70px]" id='faqs'>
             <div className="w-fit flex m-auto mb-[0px]">
                 <AttentionSeeker
                     effect="wobble"
@@ -34,7 +34,7 @@ export const FAQ = () => {
                 >
                     <Image
                         src={
-                            'https://res.cloudinary.com/db7nrltsv/image/upload/v1690294091/Untitled_design_11_cigk4r.png'
+                            '/images/scribble-question.png'
                         }
                         width={50}
                         height={50}
@@ -50,7 +50,7 @@ export const FAQ = () => {
                 >
                     <Image
                         src={
-                            'https://res.cloudinary.com/db7nrltsv/image/upload/v1690294091/Untitled_design_11_cigk4r.png'
+                            '/images/scribble-question.png'
                         }
                         width={50}
                         height={50}

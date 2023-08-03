@@ -25,11 +25,12 @@ export const Services = () => {
                 <AttentionSeeker effect="wobble">
                     <Image
                         src={
-                            'https://res.cloudinary.com/db7nrltsv/image/upload/v1690373183/Untitled_design_14_wjye2i.png'
+                            '/images/side-rays.png'
                         }
                         width={150}
                         height={150}
                         alt="ray"
+                        className='select-none'
                     />
                 </AttentionSeeker>
             </div>
@@ -44,21 +45,21 @@ export const Services = () => {
                 <AttentionSeeker cascade effect="heartBeat">
                     <Image
                         src={
-                            'https://res.cloudinary.com/db7nrltsv/image/upload/v1690373184/Untitled_design_16_tbyrqw.png'
+                            '/images/sparkle.png'
                         }
                         width={80}
                         height={80}
                         alt="ray"
-                        className="rotate-[-20deg] mr-[10px]"
+                        className="rotate-[-20deg] mr-[10px] select-none"
                     />
                     <Image
                         src={
-                            'https://res.cloudinary.com/db7nrltsv/image/upload/v1690373184/Untitled_design_16_tbyrqw.png'
+                            '/images/sparkle.png'
                         }
                         width={80}
                         height={80}
                         alt="ray"
-                        className="rotate-[10deg]"
+                        className="rotate-[10deg] select-none"
                     />
                 </AttentionSeeker>
             </div>
@@ -68,12 +69,12 @@ export const Services = () => {
                     <AttentionSeeker effect="wobble" duration={2000}>
                         <Image
                             src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690373188/Untitled_design_17_hyusqw.png'
+                                '/images/scribble-triangles.png'
                             }
                             alt="triangles"
                             width={100}
                             height={100}
-                            className="rotate-[30deg]"
+                            className="rotate-[30deg] select-none"
                         />
                     </AttentionSeeker>
                 </div>
@@ -97,11 +98,11 @@ export const Services = () => {
 
                         <Image
                             src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690368221/undraw_building_websites_i78t_vogdu2.svg'
+                                '/images/web-dev.svg'
                             }
                             width={300}
                             height={357}
-                            className=""
+                            className="select-none"
                             alt="building website"
                         />
                     </div>
@@ -135,12 +136,12 @@ export const Services = () => {
                     <AttentionSeeker effect="swing" duration={2000}>
                         <Image
                             src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690377783/Untitled_design_4_nldou2.png'
+                                '/images/scribble-box.png'
                             }
-                            alt="square"
+                            alt="box"
                             width={100}
                             height={100}
-                            className="rotate-[-30deg]"
+                            className="rotate-[-30deg] select-none"
                         />
                     </AttentionSeeker>
                 </div>
@@ -162,12 +163,12 @@ export const Services = () => {
 
                         <Image
                             src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690369327/undraw_futuristic_interface_re_0cm6_1_cxk7ih.svg'
+                                '/images/ui-ux.svg'
                             }
                             width={200}
                             height={257}
                             className=""
-                            alt="building website"
+                            alt="ui ux"
                         />
                     </div>
                 </div>
@@ -200,9 +201,9 @@ export const Services = () => {
                     <AttentionSeeker effect="tada" duration={2000}>
                         <Image
                             src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690380408/Untitled_design_7_r2ivbs.png'
+                                '/images/scribble-phone.png'
                             }
-                            alt="triangles"
+                            alt="phone"
                             width={100}
                             height={100}
                             className="rotate-[30deg]"
@@ -229,7 +230,7 @@ export const Services = () => {
 
                         <Image
                             src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690369422/undraw_mobile_application_re_13u3_gria68.svg'
+                                '/images/app-dev.svg'
                             }
                             width={200}
                             height={357}

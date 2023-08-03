@@ -16,11 +16,12 @@ export const Footer = () => {
             >
                 <Image
                     src={
-                        'https://res.cloudinary.com/db7nrltsv/image/upload/v1690291745/Untitled_design_10_if49qd.png'
+                        '/images/synapse-team.png'
                     }
                     width={1980}
                     height={350}
                     alt="synapse team"
+                    className='select-none'
                 />
             </Fade>
 

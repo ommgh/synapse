@@ -70,7 +70,7 @@ export const Projects = () => {
 
                 <div className="grid grid-flow-row grid-cols-2 justify-center items-center mt-[70px] gap-[100px] max-[1330px]:grid-cols-1 max-[600px]:gap-[60px]">
                     {projectData.map((data: Project, id: number) => (
-                        <>
+                        <div key={id}>
                             {showBox && index == id && (
                                 <Fade
                                     duration={500}
@@ -84,7 +84,7 @@ export const Projects = () => {
                                     />
                                 </Fade>
                             )}
-                            <Fade direction="up" triggerOnce cascade key={id}>
+                            <Fade direction="up" triggerOnce cascade>
                                 <div className="flex flex-col items-center">
                                     <div
                                         className="w-[533px] h-[300px] flex justify-center items-center overflow-hidden hover:cursor-pointer max-[600px]:w-full max-[600px]:h-fit bg-red-300"
@@ -107,7 +107,7 @@ export const Projects = () => {
                                     </p>
                                 </div>
                             </Fade>
-                        </>
+                        </div>
                     ))}
                 </div>
             </div>

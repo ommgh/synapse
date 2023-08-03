@@ -1,6 +1,7 @@
 'use client'
 
 import { poppins } from "@/lib/fonts"
+import Image from "next/image"
 import Link from "next/link"
 import { Dispatch, SetStateAction } from "react"
 import { Zoom } from "react-awesome-reveal"
@@ -18,7 +19,15 @@ export const SideNavbar = ({ setShowSideNav }: ShowSideNav) => {
                 <button 
                 className="absolute top-0 left-0 p-4"
                 onClick={() => setShowSideNav(false)}
-                >close</button>
+                >
+                    <Image
+                        width="34"
+                        height="34"
+                        src="/images/close.png"
+                        alt="close"
+                        className="select-none"
+                    />
+                </button>
 
                 <div
                     className={`px-[30px] flex flex-col text-3xl font-semibold justify-center items-center gap-[50px] ${poppins.className}`}
@@ -53,6 +62,14 @@ export const SideNavbar = ({ setShowSideNav }: ShowSideNav) => {
                         className="hover:font-bold"
                     >
                         Projects
+                    </Link>
+
+                    <Link
+                        href={'/#faqs'}
+                        onClick={() => setShowSideNav(false)}
+                        className="hover:font-bold"
+                    >
+                        FAQs
                     </Link>
                 </div>
 

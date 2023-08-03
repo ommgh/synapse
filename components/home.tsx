@@ -17,12 +17,12 @@ export const Home = () => {
             >
                 <Image
                     src={
-                        'https://res.cloudinary.com/db7nrltsv/image/upload/v1690231624/Untitled_design_5_psfews.png'
+                        '/images/scribble-triangle.png'
                     }
                     width={350}
                     height={350}
                     alt="doodle triangle"
-                    className="absolute left-[-150px] max-[1235px]:scale-[0.8]"
+                    className="absolute left-[-150px] max-[1235px]:scale-[0.8] select-none"
                 />
             </Fade>
 
@@ -34,32 +34,32 @@ export const Home = () => {
             >
                 <Image
                     src={
-                        'https://res.cloudinary.com/db7nrltsv/image/upload/v1690233747/Untitled_design_7_k7g3vx.png'
+                        '/images/scribble-square.png'
                     }
                     width={250}
                     height={250}
-                    alt="doodle triangle"
-                    className="absolute right-[-150px] rotate-[30deg] max-[1235px]:scale-[0.8]"
+                    alt="doodle square"
+                    className="absolute right-[-150px] rotate-[30deg] max-[1235px]:scale-[0.8] select-none"
                 />
 
                 <Image
                     src={
-                        'https://res.cloudinary.com/db7nrltsv/image/upload/v1690295351/Untitled_design_12_jknmkm.png'
+                        '/images/doodle-circle.png'
                     }
                     width={100}
                     height={100}
-                    alt="doodle triangle"
-                    className="absolute top-[300px] right-[-70px] rotate-[30deg] max-[1235px]:scale-[0.8]"
+                    alt="doodle cicle"
+                    className="absolute top-[300px] right-[-70px] rotate-[30deg] max-[1235px]:scale-[0.8] select-none"
                 />
             </Fade>
 
             <AttentionSeeker delay={750} effect='tada'>
                 <Image
-                src={'https://res.cloudinary.com/db7nrltsv/image/upload/v1690380185/Untitled_design_6_ldp5fj.png'}
+                src={'/images/scribble-rays.png'}
                 width={100}
                 height={100}
                 alt='doodle ray'
-                className='min-[1100px]:hidden rotate-[-60deg] mt-[-30px]'
+                className='min-[1100px]:hidden rotate-[-60deg] mt-[-30px] select-none'
                 />
             </AttentionSeeker>
 

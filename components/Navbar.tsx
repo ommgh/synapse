@@ -4,6 +4,7 @@ import { poppins } from '@/lib/fonts'
 import Link from 'next/link'
 import { SideNavbar } from './side-navbar'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export const Navbar = () => {
     const [showSideNav, setShowSideNav] = useState<boolean>(false);
@@ -46,8 +47,13 @@ export const Navbar = () => {
                 </Link>
             </ul>
 
-            <button className='min-[650px]:hidden' onClick={() => setShowSideNav(true)}>
-            nav
+            <button className='min-[650px]:hidden select-none' onClick={() => setShowSideNav(true)}>
+                <Image
+                    width="24"
+                    height="24"
+                    src="/images/menu.png"
+                    alt="menu"
+                />
             </button>
 
             {showSideNav && <SideNavbar {...{setShowSideNav}} />}

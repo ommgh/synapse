@@ -30,8 +30,9 @@ export const ProjectModel = ({ project, setShowBox }: BoxProps) => {
                     <Image
                         width="34"
                         height="34"
-                        src="https://img.icons8.com/sf-regular-filled/48/x.png"
-                        alt="x"
+                        src="/images/close.png"
+                        alt="close"
+                        className='select-none'
                     />
                 </button>
 
@@ -84,6 +85,7 @@ export const ProjectModel = ({ project, setShowBox }: BoxProps) => {
                         width={1920}
                         height={1080}
                         alt="project banner"
+                        className='select-none'
                     />
                 </div>
             </div>

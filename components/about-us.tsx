@@ -21,11 +21,12 @@ export const About = () => {
                     <div className="w-full h-full overflow-hidden flex items-center justify-center">
                         <Image
                             src={
-                                'https://res.cloudinary.com/db7nrltsv/image/upload/v1690539429/pexels-mikael-blomkvist-6476260_e6qi3c.jpg'
+                                '/images/about-bg.jpg'
                             }
                             width={1047}
                             height={525}
                             alt="team"
+                            className='select-none'
                         />
                     </div>
                 </div>
