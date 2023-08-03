@@ -81,7 +81,6 @@ export const Services = () => {
                         setShowWeb(true)
                     }}
                     onMouseLeave={() => hideAll()}
-                    onClick={() => hideAll()}
                 >
                     <div className="glass-card flex flex-col justify-between items-center p-2">
                         <p
@@ -145,7 +144,6 @@ export const Services = () => {
                         setShowUIUX(true)
                     }}
                     onMouseLeave={() => hideAll()}
-                    onClick={() => hideAll()}
                 >
                     <div className="glass-card flex flex-col justify-between items-center p-2">
                         <p
@@ -207,7 +205,6 @@ export const Services = () => {
                         setShowApp(true)
                     }}
                     onMouseLeave={() => hideAll()}
-                    onClick={() => hideAll()}
                 >
                     <div className="glass-card flex flex-col justify-between items-center p-2">
                         <p
