@@ -48,7 +48,7 @@ const Form = () => {
     return (
         <form
             encType="multipart/form-data"
-            className={`flex flex-col justify-center items-center max-w-[700px] m-auto border-dashed border-2 border-black p-[30px] rounded-[32px] ${poppins.className}`}
+            className={`flex flex-col justify-center items-center max-w-[700px] m-auto border-dashed border-2 border-black p-[30px] rounded-[32px] max-[550px]:p-[15px] ${poppins.className}`}
             onSubmit={(e: any) => {
                 e.preventDefault()
                 handleSubmit()
