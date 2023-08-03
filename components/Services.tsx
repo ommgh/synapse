@@ -34,7 +34,7 @@ export const Services = () => {
             </div>
 
             <Zoom triggerOnce duration={500} delay={500}>
-                <p className="max-w-[881px] text-center text-6xl leading-[90px] font-semibold tracking-wider my-[90px]">
+                <p className="max-w-[881px] text-center text-6xl leading-[90px] font-semibold tracking-wider my-[90px] max-[1030px]:text-5xl max-[1070px]:max-w-full">
                     We provide all the services you need right in your product
                 </p>
             </Zoom>
@@ -81,7 +81,6 @@ export const Services = () => {
                         setShowWeb(true)
                     }}
                     onMouseLeave={() => hideAll()}
-                    onClick={() => hideAll()}
                 >
                     <div className="glass-card flex flex-col justify-between items-center p-2">
                         <p
@@ -145,7 +144,6 @@ export const Services = () => {
                         setShowUIUX(true)
                     }}
                     onMouseLeave={() => hideAll()}
-                    onClick={() => hideAll()}
                 >
                     <div className="glass-card flex flex-col justify-between items-center p-2">
                         <p
@@ -207,7 +205,6 @@ export const Services = () => {
                         setShowApp(true)
                     }}
                     onMouseLeave={() => hideAll()}
-                    onClick={() => hideAll()}
                 >
                     <div className="glass-card flex flex-col justify-between items-center p-2">
                         <p
