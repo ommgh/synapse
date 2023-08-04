@@ -5,7 +5,7 @@ import { KnockAPI } from '@/lib/knockapi'
 import { KnockClient } from '@/lib/knockclient'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { MessageModel } from './message-model'
+import { MessageModel } from './MessageModel'
 
 interface FormInput {
     name: string

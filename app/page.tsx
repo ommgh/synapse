@@ -1,5 +1,5 @@
-import { LandingPage } from '@/components/main-container'
-import { Navbar } from '@/components/navbar'
+import { LandingPage } from '@/components/LandingPage'
+import { Navbar } from '@/components/Navbar'
 
 export default function Home() {
     return (
