@@ -5,7 +5,7 @@ import { poppins } from '@/lib/fonts'
 import Image from 'next/image'
 import { useState } from 'react'
 import { Bounce, Fade } from 'react-awesome-reveal'
-import { ProjectModel } from './project-model'
+import { ProjectModel } from './ProjectModel'
 
 interface Project {
     id: number
@@ -17,7 +17,7 @@ interface Project {
     labels: string[]
 }
 
-export const Projects = () => {
+export const Project = () => {
     const [showBox, setShowBox] = useState<boolean>(false)
     const [project, setProject] = useState<Project>(projectData[0])
     const [index, setIndex] = useState<number>(-1)

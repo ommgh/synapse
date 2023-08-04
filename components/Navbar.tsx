@@ -2,7 +2,7 @@
 
 import { poppins } from '@/lib/fonts'
 import Link from 'next/link'
-import { SideNavbar } from './side-navbar'
+import { SideNavbar } from './SideNavbar'
 import { useState } from 'react'
 import Image from 'next/image'
 

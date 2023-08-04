@@ -1,6 +1,6 @@
 import { lexend } from '@/lib/fonts'
-import { Footer } from './footer'
-import { Form } from './submission-form'
+import { Form } from './Form'
+import { Footer } from './Footer'
 
 export const FormPage = () => {
     return (
