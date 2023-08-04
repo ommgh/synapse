@@ -1,21 +1,12 @@
 'use client'
 
+import { ProjectData } from '@/lib/types'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Dispatch, SetStateAction } from 'react'
 
-interface Project {
-    id: number
-    name: string
-    website: string
-    img: string
-    github: string
-    description: string
-    labels: string[]
-}
-
 interface BoxProps {
-    project: Project
+    project: ProjectData
     setShowBox: Dispatch<SetStateAction<boolean>>
 }
 

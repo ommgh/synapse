@@ -1,20 +1,12 @@
 'use client'
 
 import { lexend, poppins } from '@/lib/fonts'
+import { useToSetCards } from '@/lib/hooks'
 import Image from 'next/image'
-import { useState } from 'react'
 import { AttentionSeeker, Fade, Zoom } from 'react-awesome-reveal'
 
 export const Services = () => {
-    const [showWeb, setShowWeb] = useState(false)
-    const [showUIUX, setShowUIUX] = useState(false)
-    const [showApp, setShowApp] = useState(false)
-
-    const hideAll = () => {
-        setShowWeb(false)
-        setShowUIUX(false)
-        setShowApp(false)
-    }
+    const { showWeb, setShowWeb, showUIUX, setShowUIUX, showApp, setShowApp, hideAll} = useToSetCards()
 
     return (
         <div
