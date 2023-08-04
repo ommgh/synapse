@@ -1,51 +1,11 @@
 'use client'
 
 import { poppins } from '@/lib/fonts'
-import { KnockAPI } from '@/lib/knockapi'
-import { KnockClient } from '@/lib/knockclient'
-import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useToSetForm } from '@/lib/hooks'
 import { MessageModel } from './MessageModel'
 
-interface FormInput {
-    name: string
-    email: string
-    message: string
-}
-
 export const Form = () => {
-    const router = useRouter()
-    const [userId, setUserId] = useState<string>('')
-    const [showModel, setShowModel] = useState<boolean>(false)
-    const [formData, setFormData] = useState<FormInput>({
-        name: '',
-        email: '',
-        message: '',
-    })
-
-    const handleChange = (e: any) => {
-        const { name, value } = e.target
-        setFormData((prev: FormInput) => ({
-            ...prev,
-            [name]: value,
-        }))
-        if (name == 'email')
-            setUserId(
-                formData.email.substring(0, formData.email.indexOf('@') + 1)
-            )
-    }
-
-    const handleSubmit = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-        KnockAPI.setIdentify(userId, formData)
-        KnockClient.getAuth(userId)
-        KnockAPI.triggerWorkflow(userId, 'admin@10012023', formData)
-        setTimeout(() => setShowModel(true), 500)
-        setTimeout(() => {
-            setShowModel(false)
-            router.push('/')
-        }, 4000)
-    }
+    const { showModel, handleChange, handleSubmit } = useToSetForm()
 
     return (
         <form

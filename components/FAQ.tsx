@@ -1,8 +1,8 @@
 'use client'
 
 import { faqs } from '@/lib/data'
+import { useToSetFAQS } from '@/lib/hooks'
 import Image from 'next/image'
-import { useState } from 'react'
 import { AttentionSeeker } from 'react-awesome-reveal'
 
 interface Queries {
@@ -12,17 +12,7 @@ interface Queries {
 }
 
 export const FAQ = () => {
-    const [showAns, setShowAns] = useState<boolean>(false)
-    const [qIndex, setQIndex] = useState<number>(-1)
-
-    const handleClick = (id: number) => {
-        setQIndex(id)
-        if (id == qIndex && showAns) setShowAns(false)
-        else {
-            setShowAns(false)
-            setShowAns((prev: boolean) => !prev)
-        }
-    }
+    const { showAns, qIndex, handleClick } = useToSetFAQS()
 
     return (
         <div

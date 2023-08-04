@@ -6,20 +6,11 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { Bounce, Fade } from 'react-awesome-reveal'
 import { ProjectModel } from './ProjectModel'
-
-interface Project {
-    id: number
-    name: string
-    website: string
-    img: string
-    github: string
-    description: string
-    labels: string[]
-}
+import { ProjectData } from '@/lib/types'
 
 export const Project = () => {
     const [showBox, setShowBox] = useState<boolean>(false)
-    const [project, setProject] = useState<Project>(projectData[0])
+    const [project, setProject] = useState<ProjectData>(projectData[0])
     const [index, setIndex] = useState<number>(-1)
 
     return (
@@ -69,7 +60,7 @@ export const Project = () => {
                 </Fade>
 
                 <div className="grid grid-flow-row grid-cols-2 justify-center items-center mt-[70px] gap-[100px] max-[1330px]:grid-cols-1 max-[600px]:gap-[60px]">
-                    {projectData.map((data: Project, id: number) => (
+                    {projectData.map((data: ProjectData, id: number) => (
                         <div key={id}>
                             {showBox && index == id && (
                                 <Fade
@@ -87,7 +78,7 @@ export const Project = () => {
                             <Fade direction="up" triggerOnce cascade>
                                 <div className="flex flex-col items-center">
                                     <div
-                                        className="w-[533px] h-[300px] flex justify-center items-center overflow-hidden hover:cursor-pointer max-[600px]:w-full max-[600px]:h-fit bg-red-300"
+                                        className="w-[533px] h-[300px] flex justify-center items-center overflow-hidden hover:cursor-pointer max-[600px]:w-full max-[600px]:h-fit"
                                         onClick={() => {
                                             setProject(data)
                                             setIndex(id)
