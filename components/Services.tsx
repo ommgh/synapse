@@ -18,10 +18,10 @@ export const Services = () => {
 
     return (
         <div
-            className={`relative flex flex-col min-h-screen pt-[50px] px-[70px] w-screen justify-center items-center ${poppins.className}`}
+            className={`relative flex flex-col min-h-screen pt-[50px] px-[70px] w-screen justify-center items-center max-[550px]:px-[20px] max-[550px]:pt-[20px] ${poppins.className}`}
             id="services"
         >
-            <div className="absolute top-[70px] left-[150px] rotate-[20deg]">
+            <div className="absolute top-[70px] left-[150px] rotate-[20deg] max-[550px]:top-[30px] max-[550px]:left-[-50px] max-[550px]:scale-[0.35] max-[550px]:rotate-[30deg]">
                 <AttentionSeeker effect="wobble">
                     <Image
                         src={'/images/side-rays.png'}
@@ -34,14 +34,13 @@ export const Services = () => {
             </div>
 
             <Zoom triggerOnce duration={500} delay={500}>
-                <p className="max-w-[881px] text-center text-6xl leading-[90px] font-semibold tracking-wider my-[90px] max-[1030px]:text-5xl max-[1070px]:max-w-full">
+                <p className="max-w-[881px] text-center text-6xl leading-[90px] font-semibold tracking-wider my-[90px] max-[1030px]:text-5xl max-[1070px]:max-w-full max-[550px]:text-3xl max-[550px]:px-[15px]">
                     We provide all the services you need right in your product
                 </p>
             </Zoom>
 
             <div
-                className="absolute top-[370px] right-[200px] rotate-[150deg] flex"
-                onClick={() => hideAll()}
+                className="absolute top-[370px] right-[200px] rotate-[150deg] flex max-[550px]:right-[-20px] max-[550px]:top-[220px] max-[550px]:scale-[0.4]"
             >
                 <AttentionSeeker cascade effect="heartBeat">
                     <Image
@@ -61,8 +60,8 @@ export const Services = () => {
                 </AttentionSeeker>
             </div>
 
-            <div className="relative w-full min-h-[1350px] pt-[60px]">
-                <div className="absolute top-[175px] left-[950px] z-[-1]">
+            <div className="relative w-full min-h-[1350px] pt-[60px] max-[900px]:pt-[20px] max-[900px]:mb-[35px]">
+                <div className="absolute top-[175px] left-[61.8%] z-[-1] max-[1050px]:hidden">
                     <AttentionSeeker effect="wobble" duration={2000}>
                         <Image
                             src={'/images/scribble-triangles.png'}
@@ -75,7 +74,7 @@ export const Services = () => {
                 </div>
 
                 <div
-                    className="absolute left-[300px] w-[300px] h-[375px] drop-shadow-xl rounded-xl -rotate-[9deg] transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-[#39bcdc]"
+                    className="absolute left-[19%] w-[300px] h-[375px] drop-shadow-xl rounded-xl -rotate-[9deg] transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-[#39bcdc] max-[900px]:left-[1/2] max-[900px]:scale-[0.9] max-[480px]:left-[20px]"
                     onMouseEnter={() => {
                         hideAll()
                         setShowWeb(true)
@@ -101,7 +100,7 @@ export const Services = () => {
                     </div>
                 </div>
 
-                <div className="w-full h-[325px] flex justify-end mt-[50px] mb-[75px]">
+                <div className="w-full h-[325px] flex justify-end mt-[50px] mb-[75px] max-[1389px]:hidden">
                     {showWeb && (
                         <Fade duration={600}>
                             <div className="w-[650px] flex flex-col justify-center items-center bg-white transition-opacity ease-in">
@@ -125,7 +124,7 @@ export const Services = () => {
                     )}
                 </div>
 
-                <div className="absolute top-[650px] left-[350px]">
+                <div className="absolute top-[650px] left-[22.8%] max-[1050px]:hidden">
                     <AttentionSeeker effect="swing" duration={2000}>
                         <Image
                             src={'/images/scribble-box.png'}
@@ -138,7 +137,7 @@ export const Services = () => {
                 </div>
 
                 <div
-                    className="absolute left-[850px] top-[550px] w-[300px] h-[375px] drop-shadow-xl rounded-xl rotate-[9deg] transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-yellow-300"
+                    className="absolute left-[55.3%] top-[550px] w-[300px] h-[375px] drop-shadow-xl rounded-xl rotate-[9deg] transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-yellow-300 max-[900px]:left-[20%] max-[900px]:top-[500px] max-[900px]:scale-[0.9] max-[480px]:left-[20px]"
                     onMouseEnter={() => {
                         hideAll()
                         setShowUIUX(true)
@@ -162,7 +161,7 @@ export const Services = () => {
                     </div>
                 </div>
 
-                <div className="w-full h-[325px] flex justify-start mt-[150px] mb-[75px]">
+                <div className="w-full h-[325px] flex justify-start mt-[150px] mb-[75px] max-[1389px]:hidden">
                     {showUIUX && (
                         <Fade duration={600}>
                             <div className="w-[650px] flex flex-col justify-center items-center bg-white transition-opacity ease-in">
@@ -186,7 +185,7 @@ export const Services = () => {
                     )}
                 </div>
 
-                <div className="absolute top-[1150px] left-[900px]">
+                <div className="absolute top-[1150px] left-[58.5%] max-[1050px]:hidden">
                     <AttentionSeeker effect="tada" duration={2000}>
                         <Image
                             src={'/images/scribble-phone.png'}
@@ -199,7 +198,7 @@ export const Services = () => {
                 </div>
 
                 <div
-                    className="absolute left-[300px] top-[1050px] w-[300px] h-[375px] drop-shadow-xl rounded-xl -rotate-[9deg] transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-orange-300"
+                    className="absolute left-[19%] top-[1050px] w-[300px] h-[375px] drop-shadow-xl rounded-xl -rotate-[9deg] transition ease-linear hover:rotate-0 hover:transition hover:ease-linear hover:cursor-pointer overflow-hidden bg-orange-300 max-[900px]:left-[1/2] max-[900px]:top-[1000px] max-[900px]:scale-[0.9] max-[480px]:left-[20px]"
                     onMouseEnter={() => {
                         hideAll()
                         setShowApp(true)
@@ -225,7 +224,7 @@ export const Services = () => {
                     </div>
                 </div>
 
-                <div className="w-full h-[325px] flex justify-end mt-[200px] mb-[75px]">
+                <div className="w-full h-[325px] flex justify-end mt-[200px] mb-[75px] max-[1389px]:hidden">
                     {showApp && (
                         <Fade duration={600}>
                             <div className="w-[650px] flex flex-col justify-center items-center bg-white transition-opacity ease-in">

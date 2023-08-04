@@ -87,7 +87,7 @@ export const Project = () => {
                             <Fade direction="up" triggerOnce cascade>
                                 <div className="flex flex-col items-center">
                                     <div
-                                        className="w-[533px] h-[300px] flex justify-center items-center overflow-hidden hover:cursor-pointer max-[600px]:w-full max-[600px]:h-fit bg-red-300"
+                                        className="w-[533px] h-[300px] flex justify-center items-center overflow-hidden hover:cursor-pointer max-[600px]:w-full max-[600px]:h-fit"
                                         onClick={() => {
                                             setProject(data)
                                             setIndex(id)

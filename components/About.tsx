@@ -11,13 +11,13 @@ export const About = () => {
             id="about-us"
         >
             <Slide direction="left" triggerOnce className="w-full">
-                <p className="text-left text-5xl my-[30px] font-bold tracking-wider max-[1030px]:text-4xl max-[1030px]:m-[20px] max-[650px]:text-3xl">
+                <p className="text-left text-5xl my-[30px] font-bold tracking-wider max-[1030px]:text-4xl max-[1030px]:mx-[20px] max-[1030px]:my-[25px] max-[650px]:text-3xl">
                     We empower your digital future &#46;&#46;&#46;
                 </p>
             </Slide>
 
             <Fade direction="left" triggerOnce delay={1000}>
-                <div className="w-[1047px] h-[525px] mt-[30px] max-[1070px]:w-full max-[1070px]:h-fit max-[1070px]:p-3">
+                <div className="w-[1047px] h-[525px] mt-[30px] max-[1070px]:w-full max-[1070px]:h-fit max-[1070px]:p-3 max-[1070px]:my-[25px]">
                     <div className="w-full h-full overflow-hidden flex items-center justify-center">
                         <Image
                             src={'/images/about-bg.jpg'}
@@ -31,14 +31,14 @@ export const About = () => {
             </Fade>
 
             <Fade delay={500} triggerOnce>
-                <div className="absolute top-[425px] -left-[275px] translate-x-1/2 translate-y-1/3 ml-[30px] p-5 w-[650px] h-[350px] bg-[#000] text-white flex flex-col gap-[15px] rounded-xl max-[1260px]:relative max-[1260px]:top-0 max-[1260px]:left-0 max-[1260px]:translate-x-0 max-[1260px]:translate-y-0 max-[1260px]:m-[30px] max-[700px]:w-fit max-[700px]:h-fit">
+                <div className="absolute top-[425px] -left-[275px] translate-x-1/2 translate-y-1/3 ml-[30px] p-5 w-[650px] h-[350px] bg-[#000] text-white flex flex-col gap-[15px] rounded-xl max-[1260px]:relative max-[1260px]:top-0 max-[1260px]:left-0 max-[1260px]:translate-x-0 max-[1260px]:translate-y-0 max-[1260px]:m-[30px] max-[700px]:m-[20px] max-[700px]:w-fit max-[700px]:h-fit">
                     <p
                         className={`text-4xl font-semibold leading-10 tracking-wide ${lexend.className}`}
                     >
                         Why We Do This
                     </p>
 
-                    <p className="text-xl leading-7 tracking-wide">
+                    <p className="text-xl leading-7 tracking-wide max-[700px]:text-justify">
                         At our core, we believe that the digital landscape is
                         ever-evolving and presents boundless opportunities for
                         businesses and individuals alike. We are passionate
