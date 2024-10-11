@@ -39,7 +39,7 @@ export const Footer = () => {
                         href={'mailto:contact@agencysynapse.com'}
                         className="tracking-wider text-lg"
                     >
-                        contact@agencysynapse.com
+                        contact@agencysynapse.tech
                     </Link>
                 </div>
 

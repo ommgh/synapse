@@ -9,7 +9,6 @@ export const LandingPage = () => {
     return (
         <>
             <Home />
-            <About />
             <Services />
             <Project />
             <FAQ />

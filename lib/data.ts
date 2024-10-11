@@ -1,45 +1,47 @@
 export const projectData = [
     {
         id: 1,
-        name: 'Chefio',
-        website:
-            'https://www.figma.com/proto/XyQUykwsDSXcqfwwhP2NjB/Chefio-(Community)?page-id=0%3A1&type=design&node-id=1-2&viewport=70%2C572%2C0.02&t=bfetlQfgnpMO9L2r-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design',
-        img: '/images/chefio.png',
+        name: 'YardsToAcres',
+        website: 'https://yardstoacres.com',
+        img: '/images/yard.png',
         github: '',
         description:
-            'Chefio is a kitchen companion app that helps users create healthy and delicious meals using the ingredients they have at home. With a user-friendly interface, Chefio generates a list of recipes based on the food items entered by the user. It offers a food loving community to its users where they can post their dishes and gain a following. Chefio is perfect for novice and experienced cooks alike, and is a great tool for planning Healthy meals.\n\nJoin us and get popular with your dishes.',
-        labels: ['UI / UX', 'Figma'],
+            ' YardsToAcres is a real estate platform that helps users find and compare properties in different locations. The platform features a user-friendly interface that allows users to search for properties based on their preferences and requirements. Users can view property details',
+        labels: ['Real-Estate', 'NextJS', 'Sanity'],
     },
     {
         id: 2,
-        name: 'Medicol',
-        website:
-            'https://www.figma.com/proto/Cjjpc0GQhcyreGrAevQdS5/Medicol-App-UI-Design?page-id=0%3A1&type=design&node-id=9-1235&viewport=449%2C204%2C0.04&t=PyyxwfJqRXihW8NQ-1&scaling=scale-down&starting-point-node-id=9%3A1235&mode=design',
-        img: '/images/medicol.png',
+        name: 'NexaBetX',
+        website: 'https://betx-alpha.vercel.app',
+        img: '/images/betx.png',
         github: '',
         description:
-            "Medicol is an app design for any medical startup that provides its users, access to a number of doctors they can interact with by just setting an appointment date without waiting. The app comes with features to book Lab tests from the app and the sample to be taken from the User's home itself. The prescription given by Doctors are accessible to the users along with their photos for identification. The app also provides home delivery of the medicines too.",
-        labels: ['UI / UX', 'Figma'],
+            'NexaBetX is a sports betting platform that offers a wide range of betting options for users. The platform is designed to be user-friendly and intuitive, with a focus on providing a seamless betting experience. Users can place bets on various sports events, view live scores, and track their betting history. The platform also features a secure payment gateway for depositing and withdrawing funds.',
+        labels: ['Betting', 'Games', 'NextJS'],
     },
     {
         id: 3,
-        name: "Curewell Homeo's Internal Dashboard",
-        website: '',
-        img: '/images/curewell-dashboard.png',
+        name: 'Smart Quality Testing System',
+        website: 'https://sqts.vercel.app',
+        img: '/images/sqts.png',
         github: '',
         description:
-            'An Internal Dashboard for a local medical clinic that acts as a Customer Relations Manager (CRM), Inventory Management System (IMS), Appointment Manager, Invoice Generator.\n\nThe dashboard features of complex functions with beautifully crafted modern-ui that is easy to use.',
-        labels: [
-            'NextJS',
-            'tRPC',
-            'Prisma',
-            'Amazon-S3',
-            'Mantine.dev',
-            'Tailwind',
-        ],
+            'Smart Quality Testing System is a web application that helps businesses streamline their quality control processes. The platform allows users to create custom quality checklists, assign tasks to team members, and track the progress of quality tests in real-time. The system also generates detailed reports and analytics to help businesses identify areas for improvement and optimize their quality control processes.',
+        labels: ['Django', 'Python', 'Web Dev'],
     },
     {
         id: 4,
+        name: 'Puje Group',
+        website: 'https://pujegroup.com',
+        img: '/images/puje.png',
+        github: '',
+        description:
+            ' Puje Group is a construction company that specializes in residential and commercial projects. The website features a modern design with a focus on showcasing the company’s portfolio and services. Users can explore the company’s projects, read client testimonials, and get in touch with the team for inquiries. The website also features a blog section with articles on construction and real estate trends.',
+        labels: ['NextJS', 'Real-Estate', 'Construction'],
+    },
+
+    {
+        id: 5,
         name: "Curewell Homeo's Website",
         website: 'https://curewellhomeo.com',
         img: '/images/curewell-website.png',
@@ -56,24 +58,21 @@ export const projectData = [
         ],
     },
     {
-        id: 5,
-        name: 'Ecommerce-Platform: Awesome Cart',
-        website: '',
-        img: '/images/awesome-cart.png',
-        github: 'https://github.com/kushalbhana/Ecommerce-website',
-        description:
-            'This is a full-fledged e-commerce website built with modern technologies, designed to provide users with a seamless shopping experience. The project integrates a secure and reliable payment gateway, ensuring smooth transactions for both customers and sellers.',
-        labels: ['Django', 'Python', 'Web Dev'],
-    },
-    {
         id: 6,
-        name: 'Bizzygram',
+        name: "Curewell Homeo's Internal Dashboard",
         website: '',
-        img: '/images/bizzygram.png',
+        img: '/images/curewell-dashboard.png',
         github: '',
         description:
-            "Bizzygram is a cutting-edge networking platform built with Next.js and styled with Tailwind CSS. It's easy to connect and exchange info, with seamless user experience. Secure authentication and database services powered by Appwrite. Scan QR codes for instant digital business card exchange. Say goodbye to physical cards! Empower your local business's digital presence.\n\nComing soon: chat features and enhanced customization options. Experience efficient networking with Bizzygram!",
-        labels: ['NextJS', 'Typescript', 'Tailwind CSS', 'Appwrite', 'Web Dev'],
+            'An Internal Dashboard for a local medical clinic that acts as a Customer Relations Manager (CRM), Inventory Management System (IMS), Appointment Manager, Invoice Generator.\n\nThe dashboard features of complex functions with beautifully crafted modern-ui that is easy to use.',
+        labels: [
+            'NextJS',
+            'tRPC',
+            'Prisma',
+            'Amazon-S3',
+            'Mantine.dev',
+            'Tailwind',
+        ],
     },
 ]
 
