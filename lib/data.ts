@@ -1,14 +1,15 @@
 export const projectData = [
     {
         id: 1,
-        name: 'YardsToAcres',
-        website: 'https://yardstoacres.com',
-        img: '/images/yard.png',
+        name: 'Puje Group',
+        website: 'https://pujegroup.com',
+        img: '/images/puje.png',
         github: '',
         description:
-            ' YardsToAcres is a real estate platform that helps users find and compare properties in different locations. The platform features a user-friendly interface that allows users to search for properties based on their preferences and requirements. Users can view property details',
-        labels: ['Real-Estate', 'NextJS', 'Sanity'],
+            ' Puje Group is a construction company that specializes in residential and commercial projects. The website features a modern design with a focus on showcasing the company’s portfolio and services. Users can explore the company’s projects, read client testimonials, and get in touch with the team for inquiries. The website also features a blog section with articles on construction and real estate trends.',
+        labels: ['NextJS', 'Real-Estate', 'Construction'],
     },
+
     {
         id: 2,
         name: 'NexaBetX',
@@ -21,6 +22,16 @@ export const projectData = [
     },
     {
         id: 3,
+        name: 'YardsToAcres',
+        website: 'https://yardstoacres.com',
+        img: '/images/yard.png',
+        github: '',
+        description:
+            ' YardsToAcres is a real estate platform that helps users find and compare properties in different locations. The platform features a user-friendly interface that allows users to search for properties based on their preferences and requirements. Users can view property details',
+        labels: ['Real-Estate', 'NextJS', 'Sanity'],
+    },
+    {
+        id: 4,
         name: 'Smart Quality Testing System',
         website: 'https://sqts.vercel.app',
         img: '/images/sqts.png',
@@ -28,16 +39,6 @@ export const projectData = [
         description:
             'Smart Quality Testing System is a web application that helps businesses streamline their quality control processes. The platform allows users to create custom quality checklists, assign tasks to team members, and track the progress of quality tests in real-time. The system also generates detailed reports and analytics to help businesses identify areas for improvement and optimize their quality control processes.',
         labels: ['Django', 'Python', 'Web Dev'],
-    },
-    {
-        id: 4,
-        name: 'Puje Group',
-        website: 'https://pujegroup.com',
-        img: '/images/puje.png',
-        github: '',
-        description:
-            ' Puje Group is a construction company that specializes in residential and commercial projects. The website features a modern design with a focus on showcasing the company’s portfolio and services. Users can explore the company’s projects, read client testimonials, and get in touch with the team for inquiries. The website also features a blog section with articles on construction and real estate trends.',
-        labels: ['NextJS', 'Real-Estate', 'Construction'],
     },
 
     {
